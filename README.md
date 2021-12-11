@@ -43,7 +43,7 @@
 6. git remote add upstream 원본주소
 7. git remote -v (이제 여기서 origin은 자신의 계정명, upstream엔 Embedded Master가 보여야함)
 8. git fetch upstream
-9. git merge
+9. git merge upstream/main
 ```
 
 위와 같은 방식을 통해서 작업한 사항들을 업데이트할 수 있습니다.
