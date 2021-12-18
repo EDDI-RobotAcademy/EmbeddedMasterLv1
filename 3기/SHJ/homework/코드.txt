@@ -1,0 +1,44 @@
+cd EmbeddedMasterLv1 : 폴더이동
+cd 3기 : 폴더이동
+mkdir c : "c"디렉토리 생성
+vi first.c : "first.c" 편집모드
+a : insert 모드
+yy p : 한줄복사
+:set nu : 숫자생성
+dd : 한줄삭제
+u : 복원
+:%s/strawberry/melon/g : 치환
+:40 : 40라인으로 이동
+:wq : 저장 및 닫기
+gcc first.c : 컴파일
+./a.out : 실행
+gcc -o first frst.c : a.out의 이름을 first로 변경
+./first : 실행
+cd.. : 상위 디렉토리로 이동
+cd../.. 두 단계 위로 이동
+rm -rf : 디렉토리 삭제
+
+char = 1byte = 8bit = 16개의 숫자표현
+short   = 2byte
+int = 4byte
+float = 4byte
+double = 8byte
+long long int = 12byte
+long double = 16byte
+
+
+gcc -g fist.c : 디버깅 및 컴파일
+gdb a.out : 디버깅 모드
+b main : main까지
+shell celar :
+r : 동작
+l : C코드확인
+disas : 기계어 확인
+info registers : 연산용 레지스터 정보 확인
+ni : 어셈블리 단위로 이동
+p/x $rip : 레지스터값 확인
+n : C언어 단위로 이동
+p &var : 주소값 확인
+rsp : 스택의 최상위
+q : 디버깅 종료
+x 주소값 : 주소값에 들어있는 내용 확인
