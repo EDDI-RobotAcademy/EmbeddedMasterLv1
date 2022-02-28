@@ -27,7 +27,8 @@ int main(void)
     for (i = 0; i < 128; i++)
     {
         uart_print_8bit_num(eeprom_read_byte(i));
-        uart_trans('\n');
+        //uart_trans('\n');
+        uart_string_trans("\n\r\0");
     }
 
     while(1)

@@ -37,6 +37,14 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="spi_25lc010a.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="spi_25lc010a.h" />
+		<Unit filename="uart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="uart.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
