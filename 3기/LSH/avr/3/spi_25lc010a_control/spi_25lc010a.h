@@ -21,4 +21,12 @@
 #define EEPROM_PAGE_SIZE            16
 #define EEPROM_TOTAL_BYTE           128
 
+void spi_init (void);
+void eeprom_change_byte (uint8_t);
+void eeprom_send_address (uint8_t);
+uint8_t eeprom_read_status (void);
+void eeprom_write_enable (void);
+uint8_t eeprom_read_byte (uint8_t);
+void eeprom_write_byte(uint8_t, uint8_t);
+
 #endif // __SPI_25LC010A_H__
