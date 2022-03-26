@@ -16,7 +16,9 @@
 9. 앤터
 10. vi ~/.bashrc
 11. source ~/.bashrc
-12. 
+12. conda --version
+
+
 
 ```
 
