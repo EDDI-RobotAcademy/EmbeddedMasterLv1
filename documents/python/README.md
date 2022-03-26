@@ -9,7 +9,7 @@
 4. 권한 부여
    chmod 755 ./Anaconda3-2021.11-Linux-x86_64.sh
 5. 실행
-   ./Anaconda3-2021.11-Linux-x86_64.sh
+   bash Anaconda3-2021.11-Linux-x86_64.sh
 6. 앤터
 7. q
 8. yes
