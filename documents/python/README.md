@@ -17,13 +17,13 @@
 10. vi ~/.bashrc
 11. source ~/.bashrc
 12. conda --version
-
+13. 만약 여기서 버전 정보가 나오지 않는다면 경로 설정이 누락되었다는 뜻이다.
+    vi ~/.bashrc 를 입력하고 맨 아래쪽에 아래를 입력한다.
+    
+    export PATH="/home/본인계정이름/anaconda3/bin:$PATH"
 
 
 ```
-
-
-
 
 
 
