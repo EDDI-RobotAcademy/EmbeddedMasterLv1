@@ -14,6 +14,14 @@
 7. q
 8. yes
 9. 앤터
+
+done
+installation finished.
+Do you wish the installer to initialize Anaconda3
+by running conda init? [yes|no]
+
+yes
+
 10. vi ~/.bashrc
 11. source ~/.bashrc
 12. conda --version
@@ -24,7 +32,6 @@
 14. cd ~
     anaconda3/bin/python --version
     anaconda3/bin/conda --version
-
 
 ```
 
