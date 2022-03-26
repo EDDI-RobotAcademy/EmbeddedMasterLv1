@@ -21,9 +21,14 @@
     vi ~/.bashrc 를 입력하고 맨 아래쪽에 아래를 입력한다.
     
     export PATH="/home/본인계정이름/anaconda3/bin:$PATH"
+14. cd ~
+    anaconda3/bin/python --version
+    anaconda3/bin/conda --version
 
 
 ```
+
+
 
 
 
