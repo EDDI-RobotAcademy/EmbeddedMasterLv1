@@ -15,8 +15,12 @@
 8. yes
 9. 앤터
 10. vi ~/.bashrc
+11. source ~/.bashrc
+12. 
 
 ```
+
+
 
 
 
