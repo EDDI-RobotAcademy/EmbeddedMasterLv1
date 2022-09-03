@@ -9,7 +9,7 @@ int main(void)
 {
 	int data = 3;
 	int result = mult2(data);
-	printf("result = %d\n", result):
+	printf("result = %d\n", result);
 
 	return 0;
 }
