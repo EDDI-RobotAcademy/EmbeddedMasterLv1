@@ -21,6 +21,7 @@ enum polymorphism_protocol {
 #define POLY_CALL_BUFFER_COUNT          (END)
 #define POLY_CALL_BUFFER                ((END) - (1))
 
+// void (*) (void) -> polymorphism_call_ptr_t로 대체
 typedef void (* polymorphism_call_ptr_t) (void);
 
 void polymorphism_not_impl(void)
