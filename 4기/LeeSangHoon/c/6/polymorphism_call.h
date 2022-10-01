@@ -1,0 +1,19 @@
+#ifndef ASSEMBLYTEST_POLYMORPHISM_CALL_H
+#define ASSEMBLYTEST_POLYMORPHISM_CALL_H
+
+#include "device.h"
+
+#define __POLYMORPHISM_CALL(nr, sym) [nr] = sym,
+
+__POLYMORPHISM_CALL(0, proc_camera)
+__POLYMORPHISM_CALL(1, proc_dc_motor)
+__POLYMORPHISM_CALL(2, proc_bldc)
+__POLYMORPHISM_CALL(3, proc_pmsm)
+__POLYMORPHISM_CALL(4, proc_acim)
+__POLYMORPHISM_CALL(5, proc_led)
+__POLYMORPHISM_CALL(6, proc_i2c)
+__POLYMORPHISM_CALL(7, proc_spi)
+__POLYMORPHISM_CALL(8, proc_can)
+__POLYMORPHISM_CALL(9, proc_ecap)
+
+#endif //ASSEMBLYTEST_POLYMORPHISM_CALL_H
