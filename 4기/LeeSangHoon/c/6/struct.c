@@ -51,7 +51,7 @@ int main (void)
 	// struct _member를 member로 축약해서 사용하겠음을 의미함.
 	member my_account;
 
-	if (init_member(&my_account, "가즈아", 19) == MEMBER_ALLOC_FAIL)
+	if (init_member(&my_account, "gogo", 19) == MEMBER_ALLOC_FAIL)
 	{
 		printf("member 구조체 할당 실패!\n");
 		exit(-1);
