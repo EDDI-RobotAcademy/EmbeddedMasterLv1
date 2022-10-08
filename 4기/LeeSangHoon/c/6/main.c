@@ -29,9 +29,15 @@ void polymorphism_not_impl(void)
     printf("아직 구현되지 않은 스펙입니다!\n");
 }
 
+// void (*)(void) 타입
+// polymorphism_call_table[] 배열명 = {func1, func2, func3} -> non c99
+// [0 ... x] 몇 개 배치할지 -> c99
 const polymorphism_call_ptr_t polymorphism_call_table[POLY_CALL_BUFFER_COUNT] = {
         [0 ... POLY_CALL_BUFFER] = &polymorphism_not_impl,
         #include "polymorphism_call.h"
+		// [nr] = sym
+		// polymorphism_call_table[0] = proc_camera
+		// polymorphism_call_table[1] = proc_bldc
 };
 
 void recv_command_from_pc (void)
