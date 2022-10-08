@@ -49,7 +49,7 @@ int main (void)
 	struct _member account;
 	// tip: typedef를 이용했으므로 아래와 같이 사용해도 무방하다.
 	// struct _member를 member로 축약해서 사용하겠음을 의미함.
-	member my_account;
+	member my_account = {};
 
 	if (init_member(&my_account, "gogo", 19) == MEMBER_ALLOC_FAIL)
 	{
@@ -58,6 +58,7 @@ int main (void)
 	}
 
 	print_member(my_account);
+	//free_member(my_account);
 
 	return 0;
 }
