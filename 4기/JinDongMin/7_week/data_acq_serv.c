@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define ALLOCATE_SUCCESS    0
 #define ALLOCATE_FAIL       -1
@@ -61,7 +62,29 @@ void clear_air_harmonic_info(air_harmonic_info* tmp)
     tmp = NULL;
 }
 
+// 랜덤 값 생성
+int custom_random(int min, int max)
+{
+    return rand() % (max - min + 1) + min;
+}
+
+void receive_power_grid_data(power_grid_info **info)
+{
+    (*info)->data[0] = custom_random(1, 5);
+}
+
 int main(void)
 {
+    power_grid_info *receive_power_data;
+
+    srand(time(NULL));
+
+    receive_power_data = init_power_grid_info();
+
+    receive_power_grid_data(&receive_power_data);
+    printf("power_grid_info 데이터: %d\n", receive_power_data->data[0]);
+
+    clear_power_grid_info(receive_power_data);
+
     return 0;
 }
