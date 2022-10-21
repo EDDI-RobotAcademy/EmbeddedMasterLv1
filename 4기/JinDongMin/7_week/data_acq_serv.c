@@ -80,6 +80,8 @@ void receive_air_harmonic_data(air_harmonic_info** info)
 
 int main(void)
 {
+    int i, sum = 0;
+
     power_grid_info *receive_power_data;
     air_harmonic_info *receive_air_data;
 
@@ -88,13 +90,17 @@ int main(void)
     receive_power_data = init_power_grid_info();
     receive_air_data = init_air_harmonic_info();
 
-    receive_power_grid_data(&receive_power_data);
-    receive_air_harmonic_data(&receive_air_data);
-    printf("power_grid_info 데이터: %d\n", receive_power_data->data[0]);
-    printf("air_harmonic_info 데이터: %d\n", receive_air_data->data[0]);
+    for (i = 0; i < 10; i++)
+    {
+        receive_power_grid_data(&receive_power_data);
+        receive_air_harmonic_data(&receive_air_data);
+
+        sum += receive_power_data->data[0] * receive_air_data->data[0];
+    }
+    
+    printf("final sum = %d\n", sum);
 
     clear_power_grid_info(receive_power_data);
     clear_air_harmonic_info(receive_air_data);
-
     return 0;
 }
