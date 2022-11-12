@@ -36,7 +36,7 @@ int main(void)
 			}
 		}
 
-		if (error_flag)
+/		if (error_flag)
 		{
 			break;
 		}

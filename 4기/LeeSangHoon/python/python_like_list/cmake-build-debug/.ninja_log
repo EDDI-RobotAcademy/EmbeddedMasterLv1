@@ -1,0 +1,13 @@
+# ninja log v5
+1	57	6898677398223037	CMakeFiles/test_list_proj.dir/main.c.obj	e3bd809d52ff3926
+2	63	6898682029547312	CMakeFiles/test_list_proj.dir/data_structure/list/array_lists.c.obj	4aae9713c3171224
+63	131	6898682030205921	test_list_proj.exe	3e14522b1826c191
+5	65	6898678486339949	CMakeFiles/test_list_proj.dir/memory/memory_alloc.c.obj	f1c6219783fb7b7e
+2	59	6898682152148913	CMakeFiles/test_list_proj.dir/data_structure/list/array_lists.c.obj	4aae9713c3171224
+60	125	6898682152777016	test_list_proj.exe	3e14522b1826c191
+2	66	6898682329816677	CMakeFiles/test_list_proj.dir/data_structure/list/array_lists.c.obj	4aae9713c3171224
+66	134	6898682330476681	test_list_proj.exe	3e14522b1826c191
+3	65	6898687206247578	CMakeFiles/test_list_proj.dir/main.c.obj	e3bd809d52ff3926
+6	71	6898687206317578	CMakeFiles/test_list_proj.dir/data_structure/list/array_lists.c.obj	4aae9713c3171224
+7	72	6898687206317578	CMakeFiles/test_list_proj.dir/memory/memory_alloc.c.obj	f1c6219783fb7b7e
+72	138	6898687206957792	test_list_proj.exe	3e14522b1826c191

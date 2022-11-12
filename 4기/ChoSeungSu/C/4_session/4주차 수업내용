@@ -1,0 +1,48 @@
+스택 공간 배정 = 포인터 단위(8BYTE) 배수로 늘어남 
+
+[ 함수 호출규악(calling convention) ]
+system call ?? 
+ax 레지스터 system call 번호 
+
+일반함수 call
+레지스터에 6개까지 배치 
+이후 전부 stack에 배치한다 
+
+함수 변수 메모리에 대한 개념
+main 함수 내 지역변수 메모리 
+
+fun 함수의 매개변수 메모리 
+
+fun 함수의 지역변수 메모리 
+
+메모리 위치(주소)가 다 다르다.
+
+전부 다르다. 
+
+switch 와 if 문
+
+여러개의 if문
+조건 우선순위때문에 프로그래밍 꼬일 위험이 다수 있다.
+
+따라서 상황별로 대응하는 
+switch - case 활용!!!
+
+& ~ 개념 
+
+
+
+에러 핸들링 플래그를 활용하는 for -if 문에서는 goto를 활용!!!
+
+
+복습 리스트 
+calling Convention 
+
+while문 (어셈블리어 분석)
+
+switch문 
+
+if vs switch -> 가독성 측면에서 함수 포인터 응용
+
+goto 사용의 목적
+
+And Not 기법 
