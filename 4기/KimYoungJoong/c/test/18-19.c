@@ -162,7 +162,7 @@ person* person_grade_assessment(person **data)
                 (*data)[i].annual_income *=  RATE_RISE_ANNUAL_INCOME_A;
             break;
 
-            default:
+            // default;
 
         }
 
