@@ -6,6 +6,9 @@
 #define DC_MIN                  0
 #define DC_MAX                  255
 
+#define SERVO_MIN               500
+#define SERVO_MAX               2500
+
 #define STOP                    0
 #define CLOCK_WISE              1
 #define COUNTER_CLOCK_WISE      2

@@ -17,16 +17,16 @@ int check_dc_motor_direction()
 
 int clock_wise_dc_motor_scale (void)
 {
-    int range = RF_MAX - RF_MIDDLE;
-    float scale_factor = DC_MAX / (float)range;
+    int rf_range = RF_MAX - RF_MIDDLE;
+    float scale_factor = DC_MAX / (float)rf_range;
 
     return (rf_receive_dto.channel_data - RF_MIDDLE) * scale_factor;
 }
 
 int counter_clock_wise_dc_motor_scale (void)
 {
-    int range = RF_MIDDLE - RF_MIN;
-    float scale_factor = DC_MAX / (float)range;
+    int rf_range = RF_MIDDLE - RF_MIN;
+    float scale_factor = DC_MAX / (float)rf_range;
 
     return DC_MAX - (rf_receive_dto.channel_data - RF_MIN) * scale_factor;
 }
@@ -53,7 +53,10 @@ int rf_scale_dc_motor (void)
 
 int rf_scale_servo_motor (void)
 {
-    return 1;
+    int rf_range = RF_MAX - RF_MIN;
+    float scale_factor = (SERVO_MAX - SERVO_MIN) / (float)rf_range;
+
+    return (rf_receive_dto.channel_data - RF_MIN) * scale_factor + 500;
 }
 
 int rf_scale_led (void)
