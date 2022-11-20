@@ -9,6 +9,9 @@
 #define SERVO_MIN               500
 #define SERVO_MAX               2500
 
+#define LED_ON_THRESHOLD        1250
+#define LED_OFF_THRESHOLD       750
+
 #define STOP                    0
 #define CLOCK_WISE              1
 #define COUNTER_CLOCK_WISE      2
