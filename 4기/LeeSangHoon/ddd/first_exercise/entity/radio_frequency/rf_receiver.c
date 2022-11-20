@@ -1,5 +1,8 @@
 #include "rf_receiver.h"
+#include "../../utility/random/custom_random.h"
+
 #include <math.h>
+#include <stdio.h>
 
 void receive_rf_signal (void)
 {
