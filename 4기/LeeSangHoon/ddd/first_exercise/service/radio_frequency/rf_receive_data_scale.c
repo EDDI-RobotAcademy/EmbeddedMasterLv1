@@ -62,5 +62,5 @@ int rf_scale_servo_motor (void)
 int rf_scale_led (void)
 {
     if (rf_receive_dto.channel_data >= LED_ON_THRESHOLD) { return 1; }
-    else (rf_receive_dto.channel_data <= LED_OFF_THRESHOLD) { return 0; }
+    else if (rf_receive_dto.channel_data <= LED_OFF_THRESHOLD) { return 0; }
 }
