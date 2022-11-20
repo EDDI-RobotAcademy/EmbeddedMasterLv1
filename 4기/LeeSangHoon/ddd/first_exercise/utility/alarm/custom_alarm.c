@@ -1,6 +1,5 @@
 #include "custom_alarm.h"
-#include "../../radio_frequency/rf_receiver.h"
-#include <stdio.h>
+#include "../../entity/radio_frequency/rf_receiver.h"
 
 #include <signal.h>
 
@@ -17,7 +16,6 @@ void config_custom_alarm (void)
 
 void custom_alarm_handler (int signal_number)
 {
-    printf("Interrupt!\n");
     config_custom_alarm();
     receive_rf_signal();
 }
