@@ -10,18 +10,44 @@ void print_member(member_handler *mem_handler, int command)
 member* add_member(member_handler *mem_handler)
 {
     member *mem;
+    char name[STRING_MAX_LENGH];
+    char address[STRING_MAX_LENGH];
+    char phone_number[STRING_MAX_LENGH];
+    int age;
+    int str_len;
+    static int add_member_cnt  = 1;
+
 
     mem = (member*)malloc(sizeof(member));
+    printf("이름을 입력 하세요 : ");
+    scanf("%s",name);
+    str_len = strlen(name);
+    mem->name =(char *)malloc(sizeof(char) * (str_len + 1));
+    mem_handler->mem_array[add_member_cnt]->name = name;
 
+    printf("나이을 입력 하세요 : ");
+    scanf("%d",&age);
+    mem_handler->mem_array[add_member_cnt]->age = age;
     
+    printf("주소을 입력 하세요 : ");
+    scanf("%s",address);
+    str_len = strlen(address);
+    mem->address =(char *)malloc(sizeof(char) * (str_len + 1));
+    mem_handler->mem_array[add_member_cnt]->address = address;
 
+    printf("전화번호을 입력 하세요 : ");
+    scanf("%s",phone_number);
+    str_len = strlen(phone_number);
+    mem->phone_number =(char *)malloc(sizeof(char) * (str_len + 1));
+    mem_handler->mem_array[add_member_cnt]->phone_number = phone_number;
 
+    mem_handler->add_member_cnt = add_member_cnt++;
 
     return mem;
 }
 void menu_select(member_handler *mem_handler)
 {
-    member_handler *mem;
+    member *mem;
 
     int command = 0;
     printf("메뉴를 입력하세요\n");
@@ -51,7 +77,8 @@ void menu_select(member_handler *mem_handler)
 
         case COMMAND_ADD_MEMBER:
             printf("COMMAND_ADD_MEMBER in\n");
-            mem_handler->tbl->add_member(mem_handler);
+            mem = mem_handler->tbl->add_member(mem_handler);
+            printf("add_member_cnt : %d\n",mem_handler->add_member_cnt);
             break;
     }
     
@@ -66,6 +93,7 @@ member_handler *allocate_member_handler(void)
     printf("관리할 회원 수 입력 : ");
     scanf("%d",&member_max_num);
 
+    //mem_handler 동적 할당
     mem_handler = (member_handler*)malloc(sizeof(mem_handler));
     if (mem_handler == NULL)
     {
@@ -73,6 +101,7 @@ member_handler *allocate_member_handler(void)
         exit(-1);
     }
 
+    //member_handler_method_table 동적할당
     tbl = (member_handler_method_table*)malloc(sizeof(member_handler_method_table));
     if (mem_handler == NULL)
     {
@@ -84,7 +113,7 @@ member_handler *allocate_member_handler(void)
     tbl->menu_select = menu_select;
     tbl->print_member = print_member;
 
-    
+    //mem_handler->mem_array 동적 할당
     for(i; i < member_max_num; i++)
     {
         mem_handler->mem_array[i] = (member *)malloc(sizeof(member) * member_max_num);

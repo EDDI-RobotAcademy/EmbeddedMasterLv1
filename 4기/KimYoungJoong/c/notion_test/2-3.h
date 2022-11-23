@@ -34,7 +34,7 @@ struct _member
 struct _member_handler_method_table
 {
     void (* print_member)(member_handler *mem_handler, int command);
-    void (* add_member)(member_handler *mem_handler);
+    member* (* add_member)(member_handler *mem_handler);
     void (* menu_select)(member_handler *mem_handler);
 };
 
