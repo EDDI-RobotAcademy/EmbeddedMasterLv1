@@ -235,6 +235,7 @@ member_handler *allocate_member_handler(int len)
         tbl->set_members = set_members;
         tbl->print_members = print_members;
         tbl->free_members = free_members;
+        
     }
     mem_handler->tbl = tbl;
     allocated_member_handler_structure_count++;
