@@ -46,7 +46,7 @@ enum t_typename {
     char *: TYPENAME_POINTER_TO_CHAR,                           \
     void *: TYPENAME_POINTER_TO_VOID,                           \
     int *: TYPENAME_POINTER_TO_INT,                             \
-    double *: TYPENAME_POINTER_TO_DOUBLE,                        \
+    double *: TYPENAME_POINTER_TO_DOUBLE,                       \
     default: TYPENAME_OTHER)
 
 #endif
