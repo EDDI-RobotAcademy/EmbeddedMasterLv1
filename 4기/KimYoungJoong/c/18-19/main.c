@@ -45,7 +45,7 @@ void init_employee (employee_handler *em_handler)
     for(i; i< EMPLOYEE_NUMBER; i++)
     {
         str_len = strlen(name[i]);
-        empl->name = (char*) malloc(sizeof(char) * (str_len + 1));
+        //empl->name = (char*) malloc(sizeof(char) * (str_len + 1));
         
         /*
         //employee선언 사용 에러 없음
@@ -55,25 +55,104 @@ void init_employee (employee_handler *em_handler)
         */
 
         //employee_handler 사용 세그먼트 폴트 에러 발생..?
-        /*
-        em_handler->empl_array[i]->name = (char*) malloc(sizeof(char) * (str_len + 1));
-        strncpy(em_handler->empl_array[i]->name , name[i], str_len);
-        em_handler->empl_array[i]->annual_income = 3500;
-        printf("%s, %d \n",em_handler->empl_array[i]->name , em_handler->empl_array[i]->annual_income);
-        */
+        
+        em_handler->empl_array[i].name = (char*) malloc(sizeof(char) * (str_len + 1));
+        strncpy(em_handler->empl_array[i].name , name[i], str_len);
+        em_handler->empl_array[i].annual_income = 3500;
+        printf("%s, %d \n",em_handler->empl_array[i].name , em_handler->empl_array[i].annual_income);
+        
 
     }
     
 
 }
+
 void random_generator_business_score (employee_handler *em_handler)
 {
+    
+    employee *empl;
+    int business_score = 0;
+    int i = 0;
+    
+    empl = (employee*)malloc(sizeof(malloc));
+    for(i; i< EMPLOYEE_NUMBER; i++)
+    {
+        //em_handler->empl_array[i]->business_score = business_score = rand() % (BUSINESS_SCORE_MAX  - BUSINESS_SCORE_MIN + 1) + BUSINESS_SCORE_MIN;
+        //printf("em_handler->empl_array[%d]->business_score :%d\n", i, em_handler->empl_array[i]->business_score);
 
+        em_handler->empl_array[i].business_score = rand() % (BUSINESS_SCORE_MAX  - BUSINESS_SCORE_MIN + 1) + BUSINESS_SCORE_MIN;
+        //printf("em_handler->empl_array[%d]->business_score :%d\n", i, empl->business_score);
+        //em_handler->empl_array[i]->business_score = empl->business_score;
+    }
+    
 }
+
+void evaluation_employee (employee_handler *en_handler)
+{
+    
+    int i = 0;
+    static int j = 0;
+    for(i; i < EMPLOYEE_NUMBER; i++)
+    {
+        switch(en_handler->empl_array[i].business_score)//en_handler->empl_array[i]->business_score)
+        {
+            case BUSINESS_SCORE_A:
+                en_handler->empl_array[i].before_income[j] = en_handler->empl_array[i].annual_income;
+                en_handler->empl_array[i].annual_income *= INCRESE_PESENT_SCORE_A;
+                //en_handler->empl_array[i].before_income[i] = en_handler->empl_array[i].annual_income;
+                //en_handler->empl_array[i].annual_income *= INCRESE_PESENT_SCORE_A;
+                break;
+
+            case BUSINESS_SCORE_B:
+                en_handler->empl_array[i].before_income[j] = en_handler->empl_array[i].annual_income;
+;
+                en_handler->empl_array[i].annual_income *= INCRESE_PESENT_SCORE_B;
+                break;
+
+            case BUSINESS_SCORE_C:
+                en_handler->empl_array[i].before_income[j] = en_handler->empl_array[i].annual_income;
+                en_handler->empl_array[i].annual_income *= INCRESE_PESENT_SCORE_C;
+                break;
+
+            case BUSINESS_SCORE_D:
+                en_handler->empl_array[i].before_income[j] = en_handler->empl_array[i].annual_income;
+                en_handler->empl_array[i].annual_income *= INCRESE_PESENT_SCORE_D;
+                break;
+
+            case BUSINESS_SCORE_E:
+                en_handler->empl_array[i].before_income[j] = en_handler->empl_array[i].annual_income;
+                en_handler->empl_array[i].annual_income *= INCRESE_PESENT_SCORE_E;
+                break;
+
+            case BUSINESS_SCORE_F:
+                en_handler->empl_array[i].before_income[j] = en_handler->empl_array[i].annual_income;
+                en_handler->empl_array[i].annual_income *= INCRESE_PESENT_SCORE_F;
+                break;
+
+            default:
+
+                break;
+        }
+        
+    }
+    j++;
+    
+}
+
+
 void print_employee_income (employee_handler *em_handler)
 {
-
+    int i = 0;
+    static int j = 0;
+    for(i; i < EMPLOYEE_NUMBER; i++)
+    {
+        printf("%d년차 %s의 직전연봉은 %d 현재 연봉은 %d입니다.\n", j + 1, em_handler->empl_array[i].name, em_handler->empl_array[i].before_income[j], em_handler->empl_array[i].annual_income);
+    }
+    printf("\n");
+    
+    j++;
 }
+
 
 
 employee_handler *allocate_employee_handler(void)
@@ -84,7 +163,7 @@ employee_handler *allocate_employee_handler(void)
 
     //empoyee_handler 동적 할당
     em_handler = (employee_handler*)malloc(sizeof(employee_handler) + sizeof(employee) * EMPLOYEE_NUMBER);
-    if(em_handler ==NULL)
+    if(em_handler == NULL)
     {
         printf("empoyee_handler 동작할당 실패\n");
         exit(-1);
@@ -95,21 +174,33 @@ employee_handler *allocate_employee_handler(void)
     tbl->init_employee = init_employee;
     tbl->random_generator_business_score = random_generator_business_score;
     tbl->print_employee_income = print_employee_income;
+    tbl->evaluation_employee = evaluation_employee;
     em_handler->tbl = tbl;
     if(tbl ==NULL)
     {
         printf("_employee_metod_table 동작할당 실패\n");
         exit(-1);
     }
+    em_handler->empl_array = (employee*)malloc(sizeof(employee) * EMPLOYEE_NUMBER);
 
     return em_handler;
 }
 int main (void)
 {
+    static int num;
     srand(time(NULL));
     employee_handler *em_handler;
-
+    printf("시뮬레이션 할 연차를 입력하세요 (최대 10년)\n");
+    scanf("%d",&num);
+    
     em_handler = allocate_employee_handler();
     em_handler->tbl->init_employee(em_handler);
+    while(num)
+    {
+        em_handler->tbl->random_generator_business_score(em_handler);
+        em_handler->tbl->evaluation_employee(em_handler);
+        em_handler->tbl->print_employee_income(em_handler);
+        num--;
+    }
     return 0;
 }

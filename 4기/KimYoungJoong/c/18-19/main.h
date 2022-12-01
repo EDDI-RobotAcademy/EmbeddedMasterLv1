@@ -28,17 +28,22 @@
 
 #define EMPLOYEE_NUMBER   5
 
-#define GRADE_A     1
-#define GRADE_B     2
-#define GRADE_C     3
-#define GRADE_D     4
-#define GRADE_E     5
-#define GRADE_F     6
+#define BUSINESS_SCORE_A     1
+#define BUSINESS_SCORE_B     2
+#define BUSINESS_SCORE_C     3
+#define BUSINESS_SCORE_D     4
+#define BUSINESS_SCORE_E     5
+#define BUSINESS_SCORE_F     6
 
-#define GRADE_MIN   1
-#define GRADE_MAX   6
+#define BUSINESS_SCORE_MIN   1
+#define BUSINESS_SCORE_MAX   6
 
-
+#define INCRESE_PESENT_SCORE_A  1.1
+#define INCRESE_PESENT_SCORE_B  1.09
+#define INCRESE_PESENT_SCORE_C  1.08
+#define INCRESE_PESENT_SCORE_D  1.07
+#define INCRESE_PESENT_SCORE_E  1.05
+#define INCRESE_PESENT_SCORE_F  1.03
 
 
 typedef struct _employee    employee;
@@ -49,7 +54,7 @@ struct _employee
 {
     char *name;
     int annual_income;
-    int before_income;
+    int before_income[10];
     int business_score;
 };
 
@@ -57,7 +62,9 @@ struct _employee_handler_metod_table
 {
     void( *init_employee)(employee_handler *em_handler);
     void( *random_generator_business_score)(employee_handler *em_handler);
+    void( *evaluation_employee)(employee_handler *en_handler);
     void( *print_employee_income)(employee_handler *em_handler);
+    
     
 };
 
@@ -65,6 +72,6 @@ struct _employee_handler
 {
     employee_handler_metod_table *tbl;
 
-    employee *empl_array[0];
+    employee *empl_array;
 };
 
