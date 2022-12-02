@@ -1,10 +1,11 @@
+// 강사님 파일은 why_goto2.c
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <stdbool.h>
 
-#define ERROR			7
-#define LOOP_END		50
+#define ERROR		7
+#define LOOP_END	50
 
 int main(void)
 {
@@ -20,10 +21,11 @@ int main(void)
 		{
 			for (k = 0; k < LOOP_END; k++)
 			{
-				data = rand() % (LOOP_END + 1);
+				data = rand() % (LOOP_END + 1); // 범위는 [0, LOOP_END]
 				printf("data = %d\n", data);
 
-				if (data == ERROR) {
+				if (data == ERROR)
+				{
 					printf("Error 발생!\n");
 					error_flag = true;
 					break;
@@ -36,7 +38,7 @@ int main(void)
 			}
 		}
 
-/		if (error_flag)
+		if (error_flag)
 		{
 			break;
 		}
