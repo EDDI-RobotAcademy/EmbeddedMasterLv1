@@ -1,8 +1,6 @@
-//
-// Created by oem on 22. 12. 2..
-//
-
 #ifndef THIRD_EXERCISE_WIFI_RECEIVE_SERVICE_H
 #define THIRD_EXERCISE_WIFI_RECEIVE_SERVICE_H
+
+void wifi_data_scale2dc_motor (void);
 
 #endif //THIRD_EXERCISE_WIFI_RECEIVE_SERVICE_H
