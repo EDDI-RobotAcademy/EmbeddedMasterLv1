@@ -47,5 +47,6 @@ void init_pre_allocated_memory_0arg (void);
 void init_pre_allocated_memory_1arg (int);
 void alloc_pre_allocated_memory (void);
 void set_pre_allocated_max_memory_size (int);
+int find_fit_slab_index(int);
 
 #endif
