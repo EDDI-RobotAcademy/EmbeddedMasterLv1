@@ -79,3 +79,23 @@ int find_fit_slab_index(int request_memory_size)
     exponent_number = (ieee754.trick_shift_system[EXPONENT_IDX] >> FOCUS_EXPONENT) - DOUBLE_PREICISION_BIAS;
     return exponent_number + ((request_memory_size & (request_memory_size - (1 << exponent_number))) ? 1 : 0);
 }
+
+void *get_free_pre_allocated_memory(int memory_idx)
+{
+    if (free_memory[memory_idx].free_idx[0]->state == NOT_YET)
+    {
+        int current_free_memory_idx = free_memory[memory_idx].free_idx[0]->idx;
+        //adjust_free_usage_memory();
+        return pre_allocated_memory.allocated_memory[memory_idx][current_free_memory_idx];
+    }
+}
+
+void *pre_allocated_memory_alloc(int request_memory_size)
+{
+    int memory_idx = find_fit_slab_index(request_memory_size);
+
+    if (memory_idx < 5) { memory_idx = 0; }
+    else { memory_idx -= ARRAY_BIAS; }
+
+    return get_free_pre_allocated_memory(memory_idx);
+}
