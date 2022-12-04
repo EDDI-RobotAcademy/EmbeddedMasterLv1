@@ -8,6 +8,7 @@ typedef struct _usage_memory_idx usage_memory_idx;
 struct _usage_memory_idx
 {
     int idx;
+    int state;
     struct _usage_memory_idx *next;
 };
 

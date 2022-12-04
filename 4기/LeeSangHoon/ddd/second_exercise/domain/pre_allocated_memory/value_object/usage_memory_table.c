@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 #include "usage_memory_table.h"
 
 void init_usage_memory_table (void)
@@ -8,8 +11,9 @@ void init_usage_memory_table (void)
     {
         for (j = 0; j < MEMORY_SIZE_LIMIT; j++)
         {
-            usage_memory[i].usage_idx[j] = (usage_memory_idx *) malloc(sizeof(usage_memory_idx));
-            usage_memory[i].usage_idx[j]->idx = NOT_YET;
+            usage_memory[i].usage_idx[j] = (usage_memory_idx *)malloc(sizeof(usage_memory_idx));
+            usage_memory[i].usage_idx[j]->idx = j;
+            usage_memory[i].usage_idx[j]->state = NOT_YET;
 
             if (j > 0)
             {
