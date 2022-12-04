@@ -1,5 +1,6 @@
-#include <malloc.h>
+#include <stdlib.h>
 #include <stdio.h>
+
 #include "free_memory_table.h"
 
 void init_free_memory_table (void)
@@ -10,8 +11,9 @@ void init_free_memory_table (void)
     {
         for (j = 0; j < MEMORY_SIZE_LIMIT; j++)
         {
-            free_memory[i].free_idx[j] = (free_memory_idx *) malloc(sizeof(free_memory_idx));
-            free_memory[i].free_idx[j]->idx = NOT_YET;
+            free_memory[i].free_idx[j] = (free_memory_idx *)malloc(sizeof(free_memory_idx));
+            free_memory[i].free_idx[j]->idx = j;
+            free_memory[i].free_idx[j]->state = NOT_YET;
 
             if (j > 0)
             {

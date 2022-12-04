@@ -8,6 +8,7 @@ typedef struct _free_memory_idx free_memory_idx;
 struct _free_memory_idx
 {
     int idx;
+    int state;
     struct _free_memory_idx *next;
 };
 
@@ -21,6 +22,7 @@ struct _free_memory_table
 free_memory_table free_memory[PREALLOC_COUNT];
 
 #define NOT_YET                 -1
+#define USAGE                   1
 
 void init_free_memory_table (void);
 void print_free_memory_table (void);
