@@ -60,3 +60,22 @@ void set_pre_allocated_max_memory_size (int request_max_memory_size)
     pre_allocated_memory.allocated_max_memory_size = request_max_memory_size;
 }
 
+#define DOUBLE_PRESENTATION_WITH_INTEGER                2
+#define EXPONENT_IDX                                    1
+#define DOUBLE_PREICISION_BIAS                          1023
+#define FOCUS_EXPONENT                                  20
+
+int find_fit_slab_index(int request_memory_size)
+{
+    int exponent_number;
+    union
+    {
+        double ieee754_double_value;
+        int trick_shift_system[DOUBLE_PRESENTATION_WITH_INTEGER];
+    }
+    ieee754;
+
+    ieee754.ieee754_double_value = request_memory_size;
+    exponent_number = (ieee754.trick_shift_system[EXPONENT_IDX] >> FOCUS_EXPONENT) - DOUBLE_PREICISION_BIAS;
+    return exponent_number + ((request_memory_size & (request_memory_size - (1 << exponent_number))) ? 1 : 0);
+}
