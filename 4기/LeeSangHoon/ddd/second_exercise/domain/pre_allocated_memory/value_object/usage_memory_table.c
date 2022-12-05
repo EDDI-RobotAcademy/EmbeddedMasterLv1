@@ -44,3 +44,9 @@ void print_usage_memory_table (void)
         }
     }
 }
+
+void set_usage_memory_table(int memory_idx, int will_be_set_idx)
+{
+    usage_memory_idx current_set_idx = *usage_memory[memory_idx].usage_idx[will_be_set_idx];
+    current_set_idx.state = USAGE;
+}

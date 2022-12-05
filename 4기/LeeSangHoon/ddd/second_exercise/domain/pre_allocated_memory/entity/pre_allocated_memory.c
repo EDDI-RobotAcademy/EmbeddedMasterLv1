@@ -4,6 +4,7 @@
 
 #include "pre_allocated_memory.h"
 #include "../value_object/free_memory_table.h"
+#include "../value_object/usage_memory_table.h"
 
 void init_pre_allocated_memory_0arg (void)
 {
@@ -85,7 +86,7 @@ void *get_free_pre_allocated_memory(int memory_idx)
     if (free_memory[memory_idx].free_idx[0]->state == NOT_YET)
     {
         int current_free_memory_idx = free_memory[memory_idx].free_idx[0]->idx;
-        //adjust_free_usage_memory();
+        adjust_free_usage_memory(memory_idx, current_free_memory_idx);
         return pre_allocated_memory.allocated_memory[memory_idx][current_free_memory_idx];
     }
 }
@@ -98,4 +99,10 @@ void *pre_allocated_memory_alloc(int request_memory_size)
     else { memory_idx -= ARRAY_BIAS; }
 
     return get_free_pre_allocated_memory(memory_idx);
+}
+
+void adjust_free_usage_memory(int memory_idx, int will_be_set_idx)
+{
+    adjust_free_memory_table(memory_idx, will_be_set_idx);
+    set_usage_memory_table(memory_idx, will_be_set_idx);
 }
