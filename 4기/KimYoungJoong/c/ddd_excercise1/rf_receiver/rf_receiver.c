@@ -13,7 +13,7 @@ void rf_ch_set(void)
 }
 void rf_receive_signal(rf_receive_object *rf_r_handler)
 {
-    rf_r_handler->rf_receive_signal
+    rf_r_handler->rf_receive_signal;
 }
 
 void rf_receive_data_print(data_transfer_object *dto)
