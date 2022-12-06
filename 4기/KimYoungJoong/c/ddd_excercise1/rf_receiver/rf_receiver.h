@@ -29,8 +29,7 @@
 #include <string.h>
 
 
-#define RF_DATA_MIN     600
-#define RF_DATA_MAX     1400
+
 
 #define DC_DATA_MIN     0
 #define DC_DATA_MAX     255
@@ -40,6 +39,8 @@
 
 #define LED_DATA_MIN    1000
 #define LED_DATA_MAX    1500
+
+#define USE_RF_CH       3
 
 enum rf_channel {
     CHANNEL1,
@@ -60,7 +61,7 @@ struct _rf_receive_object
    int rf_receive_signal;
 };
 
-void rf_receive_signal(_rf_receive_object *rf_r_handler);
+void rf_receive_signal(rf_receive_object *rf_r_handler);
 
 
 

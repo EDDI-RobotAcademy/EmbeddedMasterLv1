@@ -30,6 +30,15 @@
 
 int main (void)
 {
+    int rf_transmit_signal;
+
+    //custom_random generator
+    while(1)
+    {
+        init_random_generator();
+        rf_transmit_signal = random_generator_data();
+        printf("rf_transmit_signal : %d\n", rf_transmit_signal);
+    }
 
     return 0;
 }
