@@ -1,5 +1,5 @@
 #include "wifi_receive.h"
-#include "../../utility/random/custom_random.h"
+#include "../../common/utility/random/custom_random.h"
 #include "../../common/utility/common.h"
 
 #include <stdio.h>
@@ -25,7 +25,7 @@ void get_random_wifi_data (void)
     }
     else if (wifi_receive_object_data.service_number == LED)
     {
-        wifi_receive_object_data.service_number_data = custom_random(ON, OFF);
+        wifi_receive_object_data.service_number_data = custom_random(LED_ON, LED_OFF);
     }
 }
 

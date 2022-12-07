@@ -20,6 +20,8 @@ struct _wifi_receive_object
 
 wifi_receive_object wifi_receive_object_data;
 
+#define WIFI_RECEIVE_TIME_INTERVAL          20
+
 void receive_wifi_data (void);
 void get_random_wifi_data (void);
 void print_wifi_data (void);
