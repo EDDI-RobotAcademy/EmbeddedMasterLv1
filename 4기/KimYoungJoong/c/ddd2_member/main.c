@@ -1,8 +1,7 @@
 #include <stdio.h>
 
-#include "entity/member/member_account.h"
-#include "utility/menu/menu.h"
-#include "utility/menu/menu_call.h"
+//#include "entity/member/member_account.h"
+//#include "utility/menu/menu.h"
 
 
 int main (void)
@@ -10,7 +9,8 @@ int main (void)
     set_account_number();
     for( ; ; )
     {
-        create_account();
+        //create_account();
+        menu_select();
     }   
     return 0;
 }
