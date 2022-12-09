@@ -9,6 +9,9 @@
 #define ID_DUPLICATION      1
 #define ID_NOT_DUPLICATION  0
 
+#define LOGIN_SUCCCESS  1
+#define LOGIN_FAIL      0
+
 typedef struct _member_account member_account;
 
 struct _member_account

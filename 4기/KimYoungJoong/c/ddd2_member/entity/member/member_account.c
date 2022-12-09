@@ -74,3 +74,36 @@ void print_all_member_account(void)
     }
 }
 
+bool member_login(void)
+{
+    char* id;
+    char* passaward;
+    int i = 0;
+    int result = 0;
+
+    id = (char*)malloc(sizeof(char) * ID_MAX_LENGTH);
+    passaward = (char*)malloc(sizeof(char) * ID_MAX_LENGTH);
+    printf("Login ID :\n");
+    scanf("%s", id);
+    printf("Login PASSWARD :\n");
+    scanf("%s", passaward);
+    for(i; i < member_account_count; i++)
+    {
+        if( strcmp(id, mem_account[i].id) == 0)
+        {
+            if(strcmp(passaward, mem_account[i].password) == 0 )
+            {
+                printf("%s Login 성공\n", id);
+                return LOGIN_SUCCCESS;
+            }
+            else 
+            {
+                printf("%s Login 실패\n", id);
+                return LOGIN_FAIL;
+            }
+        }        
+    }
+    printf("아이디가 없습니다.\n");
+    return LOGIN_FAIL;
+    
+}

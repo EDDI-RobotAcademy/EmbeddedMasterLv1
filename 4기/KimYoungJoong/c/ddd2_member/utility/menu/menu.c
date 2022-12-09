@@ -41,22 +41,26 @@ void proc_member_join(void)
 
 void proc_make_folder(void)
 {
+    member_login();
     printf("proc_make_folder in\n");
 }
 
 void proc_make_file(void)
 {
+    member_login();
     printf("proc_make_file in\n");
 }
 
 void proc_view_file(void)
 {
+    member_login();
     printf("proc_view_file in\n");
 }
 
 void proc_all_member_print(void)
 {
     printf("proc_all_member_print in\n");
+    print_all_member_account();
 }
 
 void menu_select(void)

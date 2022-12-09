@@ -4,6 +4,9 @@
 #define MENU_MIN    1
 #define MENU_MAX    5
 
+#define LOGIN_SUCCCESS  1
+#define LOGIN_FAIL      0
+
 void proc_member_join(void);
 void proc_make_folder(void);
 void proc_make_file(void);
