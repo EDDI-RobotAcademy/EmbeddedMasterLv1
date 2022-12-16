@@ -26,5 +26,6 @@ free_memory_table free_memory[PREALLOC_COUNT];
 
 void init_free_memory_table (void);
 void print_free_memory_table (void);
+void adjust_free_memory_table(int, int);
 
 #endif

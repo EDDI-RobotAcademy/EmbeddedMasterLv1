@@ -44,3 +44,8 @@ void print_free_memory_table (void)
         }
     }
 }
+
+void adjust_free_memory_table(int memory_idx, int will_be_set_idx)
+{
+    free_memory[memory_idx].free_idx[will_be_set_idx] = free_memory[memory_idx].free_idx[will_be_set_idx]->next;
+}

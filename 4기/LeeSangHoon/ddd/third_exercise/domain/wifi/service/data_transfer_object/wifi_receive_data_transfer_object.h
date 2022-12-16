@@ -11,6 +11,6 @@ struct _wifi_receive_data_transfer_object
 
 wifi_receive_data_transfer_object wifi_receive_dto;
 
-void config_rf_receiver_data_transfer_object (int, int, int);
+void config_wifi_receive_data_transfer_object (int, int);
 
 #endif

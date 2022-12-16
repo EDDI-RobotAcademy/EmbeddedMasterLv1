@@ -26,5 +26,6 @@ usage_memory_table usage_memory[PREALLOC_COUNT];
 
 void init_usage_memory_table (void);
 void print_usage_memory_table (void);
+void set_usage_memory_table(int, int);
 
 #endif

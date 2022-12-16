@@ -14,5 +14,6 @@ dc_motor_control_object dc_motor_control_data;
 void scale_clock_wise_dc_motor (int, float);
 void scale_counter_clock_wise_dc_motor (int, float);
 void scale_info2dc_motor (int, int, int);
+void config_dc_motor_control_data (int, int);
 
 #endif
