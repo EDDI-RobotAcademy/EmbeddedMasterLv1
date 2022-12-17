@@ -24,7 +24,7 @@ npm -v
 vue-cli를 설치합니다.  
 
 ```make
-npm install -g @vue/cli
+sudo npm install -g @vue/cli
 vue --version
 ```
 
