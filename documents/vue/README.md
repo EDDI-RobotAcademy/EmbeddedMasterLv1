@@ -1,8 +1,8 @@
 # How to install Vue on Ubuntu 20.04
 
 ```make
-apt-get update
-apt-get upgrade
+sudo apt-get update
+sudo apt-get upgrade
 
 curl -sL https://deb.nodesource.com/setup_16.x | bash -
 sudo apt-get install nodejs
