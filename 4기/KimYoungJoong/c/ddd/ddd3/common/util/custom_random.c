@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+#include "custom_random.h"
+
 void custom_random_init(void)
 {
     srand(time(NULL));
