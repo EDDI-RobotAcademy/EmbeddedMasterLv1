@@ -1,12 +1,9 @@
 #include <stdio.h>
 
-//#include "entity/member/member_account.h"
-//#include "utility/menu/menu.h"
-
 
 int main (void)
 {
-    set_account_number();
+    account_number_init();
     for( ; ; )
     {
         //create_account();

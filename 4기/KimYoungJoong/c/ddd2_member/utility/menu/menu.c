@@ -43,6 +43,7 @@ void proc_make_folder(void)
 {
     member_login();
     printf("proc_make_folder in\n");
+    creat_folder();
 }
 
 void proc_make_file(void)
@@ -76,7 +77,7 @@ redo_menu_select:
     printf("4 : 회원 파일 조회\n");
     printf("5 : 모든 회원 출력\n");
     scanf("%d", &num);
-    if(num <MENU_MIN && num < MENU_MAX)
+    if(num < MENU_MIN || num > MENU_MAX)
     {
         printf("잘못 입력하였습니다\n");
         num = 0;
@@ -84,4 +85,5 @@ redo_menu_select:
         goto redo_menu_select;
     }
     menu_call_table[num]();
+    getchar();
 }

@@ -7,7 +7,7 @@
 
 
 
-void set_account_number(void)
+void account_number_init(void)
 {
     mem_account = (member_account*) malloc (sizeof(member_account) * MEMBER_ACCOUNT);
     printf("회원 계정 동적할당 완료\n");
@@ -70,7 +70,7 @@ void print_all_member_account(void)
     int i = 0;
     for(i; i < member_account_count; i++)
     {
-        printf("id : %s\n", mem_account->id);
+        printf("id : %s\n", mem_account[i].id);
     }
 }
 
