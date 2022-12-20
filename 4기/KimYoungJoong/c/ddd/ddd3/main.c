@@ -4,6 +4,7 @@
 #include "common/util/custom_random.h"
 #include "common/util/custom_alarm.h"
 #include "entity/receive/rf_receive.h"
+#include "domain_service/dto/dto.h"
 
 
 
@@ -17,7 +18,8 @@ int main (void)
     
     while(1)
     {
-        //printf_rf_signal();
+        servo_data_trans_object(RF, 0);
+        printf_rf_signal();
     }
     return 0;
 }

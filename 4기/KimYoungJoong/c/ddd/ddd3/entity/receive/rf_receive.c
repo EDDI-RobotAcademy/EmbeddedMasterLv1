@@ -3,12 +3,14 @@
 
 #include "rf_receive.h"
 #include "../../common/util/custom_random.h"
+#include "../../domain_service/dto/dto.h"
 
 
 
 void rf_ch_init (void)
 {
     rf_receive_object_data = (rf_receive_object*)malloc(sizeof(rf_receive_object_data) * RF_CH_NUMBER);
+    dto_data = (data_trans_object*)malloc(sizeof(data_trans_object));
     if(rf_receive_object_data == NULL)
     {
         printf("RF 수신기 동적할당 실패!!\n");
@@ -21,7 +23,7 @@ void receive_rf_signal (void)
     rf_receive_object_data[current_rf_channel++].data = custom_random_generator(RANDOM_DATA_MAX, RANDOM_DATA_MIN);    
     if(current_rf_channel == RF_CH_NUMBER) { current_rf_channel = 0; }
     printf("current_rf_channel : %d\n", current_rf_channel);
-    printf_rf_signal();
+    //printf_rf_signal();
         
 
 }
