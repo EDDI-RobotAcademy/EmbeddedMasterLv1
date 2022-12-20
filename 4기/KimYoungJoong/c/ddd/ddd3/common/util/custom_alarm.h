@@ -1,7 +1,7 @@
 #ifndef __CUSTOM_ALARM_H__
 #define __CUSTOM_ALARM_H__
 
-#define RF_RECEIVE_TIME_INTERVAL    20
+#define RF_RECEIVE_TIME_INTERVAL    1000
 
 #include <unistd.h>
 
