@@ -20,7 +20,9 @@ void rf_ch_init (void)
 void receive_rf_signal (void)
 {
     //current_rf_channel = 0;
-    rf_receive_object_data[current_rf_channel++].data = custom_random_generator(RANDOM_DATA_MAX, RANDOM_DATA_MIN);    
+    rf_receive_object_data[current_rf_channel++].data = custom_random_generator(RANDOM_DATA_MAX, RANDOM_DATA_MIN);
+    rf_receive_object_data->dc_motor_sub_order = custom_random_generator(DC_MOTOR_SUB_ORDER_MAX, DC_MOTOR_SUB_ORDER_MIN);
+    
     if(current_rf_channel == RF_CH_NUMBER) { current_rf_channel = 0; }
     printf("current_rf_channel : %d\n", current_rf_channel);
     //printf_rf_signal();

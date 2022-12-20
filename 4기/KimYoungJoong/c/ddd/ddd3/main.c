@@ -18,7 +18,8 @@ int main (void)
     
     while(1)
     {
-        servo_data_trans_object(RF, 0);
+        servo_data_trans_object(RF, CHANNEL1);
+        dc_motor_data_trans_object(RF, CHANNEL2, rf_receive_object_data->dc_motor_sub_order);
         printf_rf_signal();
     }
     return 0;

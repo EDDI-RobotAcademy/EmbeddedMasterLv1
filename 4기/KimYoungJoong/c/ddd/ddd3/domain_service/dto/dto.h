@@ -15,10 +15,12 @@ struct _data_trans_object
 {
     float servo;
     float dc_motor;
+    int dc_motor_sub_order;
+
     float led;
 };
 data_trans_object *dto_data;
 
 void servo_data_trans_object(int comm, int ch);
-
+void dc_motor_data_trans_object(int comm, int ch, int sub_order);
 #endif
