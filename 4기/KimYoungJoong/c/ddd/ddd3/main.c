@@ -17,7 +17,7 @@ int main (void)
     
     while(1)
     {
-        printf_rf_signal();
+        //printf_rf_signal();
     }
     return 0;
 }
