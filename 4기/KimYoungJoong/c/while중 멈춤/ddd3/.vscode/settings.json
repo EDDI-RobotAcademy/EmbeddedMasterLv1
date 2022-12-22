@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "custom_random.h": "c",
+        "stdlib.h": "c",
+        "rf_receive.h": "c",
+        "signal.h": "c",
+        "custom_alarm.h": "c",
+        "dto.h": "c"
+    }
+}
