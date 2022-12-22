@@ -28,7 +28,7 @@ void custom_alarm_handler (int signal_number)
 void timer_handler (int signum)
 {
     static int count = 0;
-    printf("timer expired %d timers\n", ++count);
+    //printf("timer expired %d timers\n", ++count);
     receive_rf_signal();
 
     printf_rf_signal();
