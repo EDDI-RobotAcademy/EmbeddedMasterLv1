@@ -11,7 +11,7 @@ void rf_ch_init (void)
 {
     rf_receive_object_data = (rf_receive_object*)malloc(sizeof(rf_receive_object_data) * RF_CH_NUMBER);
     dto_data = (data_trans_object*)malloc(sizeof(data_trans_object));
-    dto_data->led_status = LED_STATUS_OFF;
+    dto_data->led_status = LED_STATUS_DEFAULT;
     if(rf_receive_object_data == NULL)
     {
         printf("RF 수신기 동적할당 실패!!\n");

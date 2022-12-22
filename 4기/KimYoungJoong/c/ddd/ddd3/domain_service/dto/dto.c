@@ -8,8 +8,8 @@
 
 void led_status_printf (int led_status, int ch)
 {
-    printf("led_status : %d\n", led_status);
-    printf("led_status_printf in\n");
+    //printf("led_status : %d\n", led_status);
+    //printf("led_status_printf in\n");
     switch(led_status)
     {
         case LED_STATUS_ON:
@@ -99,9 +99,13 @@ void led_data_trans_object(int comm, int ch)
     if(comm == RF)
     {
         dto_data->led = rf_receive_object_data[ch].data;
-        //printf("dto_data->led :%d\n", dto_data->led);
-        //printf("rf_receive_object_data[ch].data :%d\n", rf_receive_object_data[ch].data);
-        if(dto_data->led >= 1200)
+
+        if(dto_data->led >= 1000 && (dto_data->led_status = LED_STATUS_DEFAULT))
+        {
+            dto_data->led_status = LED_STATUS_ON;
+            led_status_printf(dto_data->led_status, ch);
+        }
+        else if(dto_data->led >= 1200)
         {
             //printf("led 1200 up in\n");
             dto_data->led_status = LED_STATUS_ON;
