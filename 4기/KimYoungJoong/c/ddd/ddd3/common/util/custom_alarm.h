@@ -9,5 +9,8 @@ void init_custom_alarm (void);
 void config_custom_alarm (void);
 void custom_alarm_handler (int signal_number);
 
+void timer_handler (int signum);
+void timer_init (void);
+
 
 #endif

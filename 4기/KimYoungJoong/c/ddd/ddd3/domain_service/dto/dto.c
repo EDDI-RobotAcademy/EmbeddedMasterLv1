@@ -8,21 +8,21 @@
 
 void led_status_printf (int led_status, int ch)
 {
-    //printf("led_status :%d\n", led_status);
-    //printf("led_status_printf in\n");
+    printf("led_status : %d\n", led_status);
+    printf("led_status_printf in\n");
     switch(led_status)
     {
         case LED_STATUS_ON:
-            printf("rf ch%d, led ON\n", ch);
+            printf("rf ch%d : led ON\n", ch);
             break;
 
         case LED_STATUS_OFF:
-            printf("rf ch%d, led OFF\n", ch);
+            printf("rf ch%d : led OFF\n", ch);
             break;
 
         case LED_STATUS_KEEP:
-            if(dto_data->led_status == LED_STATUS_ON)   { printf("rf ch%d, led ON\n", ch); }
-            else if(dto_data->led_status == LED_STATUS_ON)   { printf("rf ch%d, led OFF\n", ch); }
+            if(dto_data->led_status == LED_STATUS_ON)   { printf("rf ch%d : led ON\n", ch); }
+            else if(dto_data->led_status == LED_STATUS_OFF)   { printf("rf ch%d : led OFF\n", ch); }
             break;
 
         default:

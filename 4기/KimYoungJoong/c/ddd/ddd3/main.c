@@ -14,14 +14,15 @@ int main (void)
     rf_ch_init();
 
     custom_random_init();
-    init_custom_alarm();
+    timer_init();
+    //init_custom_alarm();
     
     while(1)
     {
-        servo_data_trans_object(RF, CHANNEL1);
-        dc_motor_data_trans_object(RF, CHANNEL2, rf_receive_object_data->dc_motor_sub_order);
-        led_data_trans_object(RF,CHANNEL3);
-        printf_rf_signal();
+        //servo_data_trans_object(RF, CHANNEL1);
+        //dc_motor_data_trans_object(RF, CHANNEL2, rf_receive_object_data->dc_motor_sub_order);
+        //led_data_trans_object(RF,CHANNEL3);
+        //printf_rf_signal();
         
     }
     return 0;

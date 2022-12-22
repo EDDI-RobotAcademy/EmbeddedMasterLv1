@@ -11,6 +11,7 @@ void rf_ch_init (void)
 {
     rf_receive_object_data = (rf_receive_object*)malloc(sizeof(rf_receive_object_data) * RF_CH_NUMBER);
     dto_data = (data_trans_object*)malloc(sizeof(data_trans_object));
+    dto_data->led_status = LED_STATUS_OFF;
     if(rf_receive_object_data == NULL)
     {
         printf("RF 수신기 동적할당 실패!!\n");
@@ -19,7 +20,6 @@ void rf_ch_init (void)
 
 void receive_rf_signal (void)
 {
-    //current_rf_channel = 0;
     rf_receive_object_data[current_rf_channel++].data = custom_random_generator(RANDOM_DATA_MAX, RANDOM_DATA_MIN);
     rf_receive_object_data->dc_motor_sub_order = custom_random_generator(DC_MOTOR_SUB_ORDER_MAX, DC_MOTOR_SUB_ORDER_MIN);
     
