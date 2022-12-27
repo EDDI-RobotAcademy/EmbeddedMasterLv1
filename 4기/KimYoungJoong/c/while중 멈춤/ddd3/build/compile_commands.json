@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/build",
+  "command": "/usr/bin/gcc   -g   -std=gnu99 -o CMakeFiles/main.dir/main.c.o   -c /home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/main.c",
+  "file": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/main.c"
+},
+{
+  "directory": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/build",
+  "command": "/usr/bin/gcc   -g   -std=gnu99 -o CMakeFiles/main.dir/common/util/custom_random.c.o   -c /home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/common/util/custom_random.c",
+  "file": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/common/util/custom_random.c"
+},
+{
+  "directory": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/build",
+  "command": "/usr/bin/gcc   -g   -std=gnu99 -o CMakeFiles/main.dir/entity/receive/rf_receive.c.o   -c /home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/entity/receive/rf_receive.c",
+  "file": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/entity/receive/rf_receive.c"
+},
+{
+  "directory": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/build",
+  "command": "/usr/bin/gcc   -g   -std=gnu99 -o CMakeFiles/main.dir/common/util/custom_alarm.c.o   -c /home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/common/util/custom_alarm.c",
+  "file": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/common/util/custom_alarm.c"
+},
+{
+  "directory": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/build",
+  "command": "/usr/bin/gcc   -g   -std=gnu99 -o CMakeFiles/main.dir/domain_service/dto/dto.c.o   -c /home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/domain_service/dto/dto.c",
+  "file": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd/ddd3/domain_service/dto/dto.c"
+}
+]

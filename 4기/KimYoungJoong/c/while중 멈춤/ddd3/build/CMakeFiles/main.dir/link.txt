@@ -1,0 +1,1 @@
+/usr/bin/gcc -g  -rdynamic CMakeFiles/main.dir/main.c.o CMakeFiles/main.dir/common/util/custom_random.c.o CMakeFiles/main.dir/entity/receive/rf_receive.c.o CMakeFiles/main.dir/common/util/custom_alarm.c.o CMakeFiles/main.dir/domain_service/dto/dto.c.o  -o main 

@@ -12,6 +12,6 @@ struct _rf_receiver_data_transfer_object
 
 rf_receiver_data_transfer_object rf_receiver_dto;
 
-void config_rf_receiver_data_transfer_object (int, int, int);
+void config_rf_receiver_data_transfer_object (int, int);
 
 #endif

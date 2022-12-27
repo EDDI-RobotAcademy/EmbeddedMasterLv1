@@ -1,7 +1,6 @@
 #include "rf_receiver.h"
-#include "../../utility/random/custom_random.h"
+#include "../../common/utility/random/custom_random.h"
 
-#include <math.h>
 #include <stdio.h>
 
 void receive_rf_signal (void)
@@ -31,7 +30,7 @@ void print_rf_channel_data (void)
            rf_receive_object_data.channel[6], rf_receive_object_data.channel[7]);
 }
 
-int is_all_rf_channel_set (void)
+int check_all_rf_channel_set (void)
 {
     int i;
 

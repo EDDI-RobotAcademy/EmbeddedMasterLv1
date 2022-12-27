@@ -14,8 +14,8 @@
 #define COUNTER_CLOCK_WISE              1
 #define STOP                            2
 
-#define ON                              1
-#define OFF                             0
+#define LED_ON                          1
+#define LED_OFF                         0
 
 #define DC_MOTOR_GEAR_MIN               1
 #define DC_MOTOR_GEAR_MAX               9
