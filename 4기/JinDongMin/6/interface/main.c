@@ -4,7 +4,7 @@
 
 #include "device.h"
 
-enum polumorphism_protocol {
+enum polymorphism_protocol {
     CAMERA,
     DCMOTOR,
     BLDC,
