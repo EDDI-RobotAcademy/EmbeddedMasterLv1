@@ -9,8 +9,14 @@
 #define RF_CHANNEL_MAX 8
 
 #define RF_MIN          600
-#define RF_MIDDEL       1000
+#define RF_MIDDLE       1000
 #define RF_MAX          1400
+
+#define SERVO_MIN       500
+#define SERVO_MAX       2500
+
+#define LED_ON          1250
+#define LED_OFF         750
 
 enum rf_channel {
     CHANNEL1,
