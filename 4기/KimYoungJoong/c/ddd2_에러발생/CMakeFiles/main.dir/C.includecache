@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/entity/member/member_account.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+stdbool.h
+-
+member_account.h
+/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/entity/member/member_account.h
+
+/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/entity/member/member_account.h
+
+/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/main.c
+stdio.h
+-
+entity/member/member_account.h
+/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/entity/member/member_account.h
+utility/menu/menu.h
+/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/utility/menu/menu.h
+utility/menu/menu_call.h
+/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/utility/menu/menu_call.h
+
+/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/utility/menu/menu.c
+stdio.h
+-
+menu.h
+/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/utility/menu/menu.h
+menu_call.h
+/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/utility/menu/menu_call.h
+
+/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/utility/menu/menu.h
+
+/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/utility/menu/menu_call.h
+menu.h
+/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/utility/menu/menu.h
+
