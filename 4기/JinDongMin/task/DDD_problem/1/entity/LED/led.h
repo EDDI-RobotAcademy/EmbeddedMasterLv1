@@ -13,7 +13,7 @@ struct _led
     bool status;
 };
 
-void change_led_status(led *, bool);
+void set_led_status(led *, bool);
 bool get_led_status(const led);
 
 #endif // __LED_H__

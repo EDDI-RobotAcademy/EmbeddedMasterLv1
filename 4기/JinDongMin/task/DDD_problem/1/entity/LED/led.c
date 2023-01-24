@@ -1,6 +1,6 @@
 #include "led.h"
 
-void change_led_status(led *_led, bool _status)
+void set_led_status(led *_led, bool _status)
 {
     _led->status = _status;
 }
