@@ -1,5 +1,7 @@
 #include "led.h"
 
+void initialize_led(led *_led) { }
+
 void set_led_status(led *_led, bool _status)
 {
     _led->status = _status;

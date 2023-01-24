@@ -13,6 +13,7 @@ struct _led
     bool status;
 };
 
+void initialize_led(led *);
 void set_led_status(led *, bool);
 bool get_led_status(const led);
 
