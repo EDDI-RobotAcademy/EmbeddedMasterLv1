@@ -22,6 +22,7 @@ static rf_receiver *rf_receiver_p;
 void initialize_rf_receiver(rf_receiver *);
 void listen_rf_receiver(rf_receiver *); // 데이터가 수신되면 그 데이터에는 정보와 채널 값이 들어있다고 가정
 void register_current_rf_receiver(const rf_receiver *);
+void fill_randomdata_on_rf_receiver(rf_receiver *);
 int get_data_from_rf_receiver(const rf_receiver);
 
 
