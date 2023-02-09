@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1675958746 source:/root/workspace/task/led/main.c
+	<avr/io.h>
+	"entity/led/led.h"
+
+1675958249 /root/workspace/task/led/entity/led/led.h
+	"../pin/pin.h"
+
+1675958757 /root/workspace/task/led/entity/pin/pin.h
+	<avr/io.h>
+	"../../common.h"
+
+1675958034 /root/workspace/task/led/common.h
+
+1675958259 source:/root/workspace/task/led/entity/led/led.c
+	"led.h"
+	"../../common.h"
+	"../pin/pin.h"
+	<util/delay.h>
+
+1675956683 source:/root/workspace/task/led/entity/pin/pin.c
+	"pin.h"
+
