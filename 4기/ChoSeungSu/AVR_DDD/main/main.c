@@ -1,4 +1,6 @@
+#include "../led/Entity/led.h" 
+
 int main(void)
 {
-    return 0;
+    init_led();
 }
