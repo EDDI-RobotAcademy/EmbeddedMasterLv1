@@ -9,4 +9,6 @@ typedef struct _led_object
 
 } led_object ;
 
+led_object * init_led(void);
+
 
