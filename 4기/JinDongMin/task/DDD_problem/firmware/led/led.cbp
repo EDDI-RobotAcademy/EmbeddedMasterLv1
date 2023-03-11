@@ -38,9 +38,17 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="led/entity/led.h" />
+		<Unit filename="led/service/blink_led.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="led/service/blink_led.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="pin/pin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pin/pin.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
