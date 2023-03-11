@@ -1,5 +1,7 @@
 #ifndef __PIN_H__
-#deifne __PIN_H__
+#define __PIN_H__
+
+#include <avr/io.h>
 
 // Value Object
 typedef struct _pin pin;
