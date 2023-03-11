@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/1.2.dir/main.c.o CMakeFiles/1.2.dir/RF/rf_receiver.c.o CMakeFiles/1.2.dir/Utility/Alarm/custom_alarm.c.o CMakeFiles/1.2.dir/Utility/Random/custom_random.c.o CMakeFiles/1.2.dir/Service/rf_receive_data_scale.c.o CMakeFiles/1.2.dir/Service/rf_receive_data_transfer_object.c.o  -o 1.2 
