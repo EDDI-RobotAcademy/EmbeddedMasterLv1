@@ -21,6 +21,7 @@ int main(void)
 				data = rand() % (LOOP_END + 1);
 				printf("data = %d\n", data);
 
+				// 이 시점에 에러가 발생했다고 가정을 해보자는 뜻
 				if (data == ERROR) {
 					printf("Error 발생!\n");
 				}

@@ -13,6 +13,9 @@ int main (void)
     init_random();
     init_custom_alarm();
 
+    // init_custom_alarm(receive_rf_signal, RF_RECEIVE_INTERVAL)
+    // init_custom_alarm(receive_wifi_signal, WIFI_RECEIVE_INTERVAL)
+
     for (;;)
     {
         if (is_all_rf_channel_set() == EVERY_RF_CHANNEL_SET)
