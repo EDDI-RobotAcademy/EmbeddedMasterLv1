@@ -1,9 +1,10 @@
-#include "../led/Entity/led.h" 
-#include "../led/Service/pin.h"
+#include "../led/Master.h"
+
+led_object led_obj; // global led_obj
+
+pin led_pin; // global led_pin 
 
 int main(void)
 {
-    init_led();
-
     return 0;
 }
