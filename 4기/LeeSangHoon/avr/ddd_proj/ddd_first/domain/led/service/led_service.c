@@ -3,19 +3,17 @@
 
 void led_on (led led_entity)
 {
-    led_repository_call_table[LED_OUT](led_entity);
+    led_repository_call_table[SET_DIRECTION](led_entity);
+    led_repository_call_table[GPIO_WRITE](led_entity);
 }
 
-void led_off (void)
+void led_off (led led_entity)
 {
-    for (int i = 0; i < 1000000; i++) {
-        ;
-    }
+    led_repository_call_table[SET_DIRECTION](led_entity);
+    led_repository_call_table[GPIO_WRITE](led_entity);
 }
 
-void led_toggle (void)
+void led_toggle (led led_entity)
 {
-    for (int i = 0; i < 1000000; i++) {
-        ;
-    }
+
 }

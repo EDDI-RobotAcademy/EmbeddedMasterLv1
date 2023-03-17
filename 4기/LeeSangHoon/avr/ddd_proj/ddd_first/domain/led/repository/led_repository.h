@@ -4,10 +4,12 @@
 #include "../entity/led.h"
 
 enum led_repository {
-    LED_OUT,
+    SET_DIRECTION,
+    GPIO_WRITE,
     LED_IO_END
 };
 
-void led_out (led led_entity);
+void set_direction (led led_entity);
+void gpio_write (led led_entity);
 
 #endif

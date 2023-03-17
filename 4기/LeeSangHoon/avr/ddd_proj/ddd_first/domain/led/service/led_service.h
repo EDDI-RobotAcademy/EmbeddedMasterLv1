@@ -11,7 +11,7 @@ enum led_domain_service {
 };
 
 void led_on (led led_entity);
-void led_off (void);
-void led_toggle (void);
+void led_off (led led_entity);
+void led_toggle (led led_entity);
 
 #endif

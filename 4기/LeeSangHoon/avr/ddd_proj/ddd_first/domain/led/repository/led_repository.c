@@ -1,22 +1,44 @@
 #include "led_repository.h"
-#include "../../utility/avr_pin.h"
+#include "../../pin/pin_map.h"
 
 #include <avr/io.h>
 
-static void setDirectionRegister (uint8_t pin)
+void set_direction (led led_entity)
 {
-    if (pin == PIN_PORT13) { DDRB = 0x20; }
+    pin_vo pin = led_entity.pin;
+    PIN_MAP pin_map = pin.pin_map;
+
+    if (pin_map > (PIN_A0 - 1))
+    {
+        DDRC = 1 << (pin_map - PIN_A0);
+    }
+    else if (pin_map > (PIN_PORT8 - 1))
+    {
+        DDRB = 1 << (pin_map - PIN_PORT8);
+    }
+    else
+    {
+        DDRD = 1 << pin_map;
+    }
 }
 
-static void setStatus(uint8_t pin, uint8_t status)
+void gpio_write (led led_entity)
 {
-    if (pin == PIN_PORT13) { PORTB = 0x20; }
+    LED_STATUS status = led_entity.status;
+    pin_vo pin = led_entity.pin;
+    PIN_MAP pin_map = pin.pin_map;
+
+    if (pin_map > (PIN_A0 - 1))
+    {
+        PORTC = status << (pin_map - PIN_A0);
+    }
+    else if (pin_map > (PIN_PORT8 - 1))
+    {
+        PORTB = status << (pin_map - PIN_PORT8);
+    }
+    else
+    {
+        PORTD = status << pin_map;
+    }
 }
 
-void led_out (led led_entity)
-{
-    unsigned char *real_hw_address = get_pinmap_port_group(get_led_pin());
-    LED_STATUS status = get_led_status();
-
-    *real_hw_address = status;
-}

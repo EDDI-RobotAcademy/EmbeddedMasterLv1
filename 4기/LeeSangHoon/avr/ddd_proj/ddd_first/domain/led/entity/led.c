@@ -1,12 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
-
 #include "led.h"
-#include "../../utility/avr_pin.h"
+#include "../../pin/pin_map.h"
 
-void led_entity_init (PIN_MAP pin, LED_STATUS status)
+void led_entity_init (PIN_MAP pin_map, PIN_OPS_MODE io_pin_mode, LED_STATUS status)
 {
-    led_entity.pin = pin;
+    led_entity.pin.pin_map = pin_map;
+    led_entity.pin.io_pin_mode = io_pin_mode;
+
     led_entity.status = status;
 }
 
@@ -20,7 +19,7 @@ void set_led_status (LED_STATUS status)
     led_entity.status = status;
 }
 
-PIN_MAP get_led_pin (void)
+pin_vo get_led_pin (void)
 {
     return led_entity.pin;
 }

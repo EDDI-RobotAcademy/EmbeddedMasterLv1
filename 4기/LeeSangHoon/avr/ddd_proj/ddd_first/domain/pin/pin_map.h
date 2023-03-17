@@ -1,9 +1,10 @@
-#ifndef __AVR_PIN_H__
-#define __AVR_PIN_H__
+#ifndef __PIN_MAP_H__
+#define __PIN_MAP_H__
 
 typedef enum _PIN_MAP PIN_MAP;
 enum _PIN_MAP
 {
+    // PORTD
     PIN_PORT0 = 0,
     PIN_PORT1 = 1,
     PIN_PORT2 = 2,
@@ -13,6 +14,7 @@ enum _PIN_MAP
     PIN_PORT6 = 6,
     PIN_PORT7 = 7,
 
+    // PORTB
     PIN_PORT8 = 8,
     PIN_PORT9 = 9,
     PIN_PORT10 = 10,
@@ -20,7 +22,8 @@ enum _PIN_MAP
     PIN_PORT12 = 12,
     PIN_PORT13 = 13,
 
-    PIN_A0 = 14,
+    // PORTC
+    PIN_A0 = 16,
     PIN_A1,
     PIN_A2,
     PIN_A3,
@@ -28,6 +31,18 @@ enum _PIN_MAP
     PIN_A5
 };
 
-unsigned char *get_pinmap_port_group (PIN_MAP pin);
+typedef enum _PIN_OPS_MODE PIN_OPS_MODE;
+enum _PIN_OPS_MODE
+{
+    INPUT_MODE = 0,
+    OUTPUT_MODE = 1
+};
+
+typedef struct _pin_vo pin_vo;
+struct _pin_vo
+{
+    enum _PIN_MAP pin_map;
+    enum _PIN_OPS_MODE io_pin_mode;
+};
 
 #endif
