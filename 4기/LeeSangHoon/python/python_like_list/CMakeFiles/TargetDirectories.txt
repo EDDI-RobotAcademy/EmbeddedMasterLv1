@@ -1,3 +1,0 @@
-/home/seungsu/EmbeddedMasterLv1/4기/LeeSangHoon/python/python_like_list/CMakeFiles/rebuild_cache.dir
-/home/seungsu/EmbeddedMasterLv1/4기/LeeSangHoon/python/python_like_list/CMakeFiles/edit_cache.dir
-/home/seungsu/EmbeddedMasterLv1/4기/LeeSangHoon/python/python_like_list/CMakeFiles/test_list_proj.dir
