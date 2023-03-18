@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/build",
+  "command": "/usr/bin/gcc   -g   -o CMakeFiles/main.dir/main.c.o   -c /home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/main.c",
+  "file": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/main.c"
+},
+{
+  "directory": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/build",
+  "command": "/usr/bin/gcc   -g   -o CMakeFiles/main.dir/entity/member/member_account.c.o   -c /home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/entity/member/member_account.c",
+  "file": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/entity/member/member_account.c"
+},
+{
+  "directory": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/build",
+  "command": "/usr/bin/gcc   -g   -o CMakeFiles/main.dir/utility/menu/menu.c.o   -c /home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/utility/menu/menu.c",
+  "file": "/home/ecosense/EmbeddedMasterLv1/4기/KimYoungJoong/c/ddd2_member/utility/menu/menu.c"
+}
+]

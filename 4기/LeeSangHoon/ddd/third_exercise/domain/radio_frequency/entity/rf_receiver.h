@@ -40,6 +40,6 @@ bool is_all_rf_channel_set;
 void receive_rf_signal (void);
 int handle_rf_channel_data (void);
 void print_rf_channel_data (void);
-int is_all_rf_channel_set (void);
+int check_all_rf_channel_set (void);
 
 #endif

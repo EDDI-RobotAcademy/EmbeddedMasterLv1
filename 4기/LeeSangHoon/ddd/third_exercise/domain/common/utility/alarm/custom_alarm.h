@@ -3,7 +3,7 @@
 
 #include <unistd.h>
 
-void init_custom_alarm (void);
+void init_custom_alarm (void (*)(void), int);
 void config_custom_alarm (void);
 void custom_alarm_handler (int);
 

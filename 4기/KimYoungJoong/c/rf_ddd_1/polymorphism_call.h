@@ -1,0 +1,13 @@
+#ifndef ASSEMBLYTEST_POLYMORPHISM_CALL_H
+#define ASSEMBLYTEST_POLYMORPHISM_CALL_H
+
+#include "device.h"
+
+#define __POLYMORPHISM_CALL(nr, sym) [nr] = sym,
+
+__POLYMORPHISM_CALL(0, proc_bldc)
+__POLYMORPHISM_CALL(1, proc_servo)
+__POLYMORPHISM_CALL(2, proc_led)
+
+
+#endif //ASSEMBLYTEST_POLYMORPHISM_CALL_H
