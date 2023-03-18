@@ -3,6 +3,9 @@
 #include "domain/pre_allocated_memory/value_object/free_memory_table.h"
 #include "domain/pre_allocated_memory/value_object/usage_memory_table.h"
 
+#include "domain/pre_allocated_memory/entity/pre_allocated_memory.h"
+#include "domain/pre_allocated_memory/service/pre_allocated_memory_service.h"
+
 int main(void)
 {
     int i;
