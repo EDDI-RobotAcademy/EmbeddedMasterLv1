@@ -1,13 +1,14 @@
 #ifndef __PIN_H__
 #define __PIN_H__
 
-#include "../Master.h"
+#include "../Common/common.h"
+#include "../Entity/led.h"
 
 typedef struct _pin
 {
     uint8_t * direction;
 
-} pin;
+}pin;
 
 typedef enum
 {
@@ -15,6 +16,7 @@ typedef enum
     PORTB = 0x25
 
 }register_map;
+
 
 void pin_direction(pin led_pin, uint8_t pin_addr);
 
