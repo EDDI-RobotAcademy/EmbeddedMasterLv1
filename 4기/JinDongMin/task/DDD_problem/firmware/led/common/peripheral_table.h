@@ -6,7 +6,7 @@
 
 typedef void (* peripheral_call_ptr_t)(void *);
 
-const pheripheral_call_ptr_t pheripheral_call_table[PERIPHERAL_END] = {
+const peripheral_call_ptr_t pheripheral_call_table[PERIPHERAL_END] = {
     (peripheral_call_ptr_t const) turn_on_led,
     (peripheral_call_ptr_t const) turn_off_led,
     (peripheral_call_ptr_t const) toggle_led
