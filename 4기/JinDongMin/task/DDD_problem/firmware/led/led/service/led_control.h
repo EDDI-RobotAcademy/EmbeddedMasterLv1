@@ -7,7 +7,7 @@ typedef enum _LED_CONTROL LED_CONTROL;
 
 enum _LED_CONTROL
 {
-    LED_TRUN_ON,
+    LED_TURN_ON,
     LED_TURN_OFF,
     LED_TOGGLE,
     LED_CONTROL_END
