@@ -5,7 +5,7 @@
 
 #include "pin/pin.h"
 #include "led/entity/led.h"
-#include "common/peripheral_table.h"
+#include "led/service/led_control_call_table.h"
 
 pin pin_of_pb5;
 led_object led1;
@@ -17,9 +17,12 @@ int main(void)
 
     while(1)
     {
-        pheripheral_call_table[LED_ON](&led1);
+        set_led_status(&led1, LED_ON);
+        led_control_call_table[LED_TURN_ON](&led1);
         _delay_ms(500);
-        pheripheral_call_table[LED_OFF](&led1);
+
+        set_led_status(&led1, LED_OFF);
+        led_control_call_table[LED_TURN_OFF](&led1);
         _delay_ms(500);
     }
 
