@@ -3,7 +3,7 @@
 
 #include "led_service.h"
 
-typedef void (* led_service_call_ptr_t) (led led_entity);
+typedef void (* led_service_call_ptr_t) (struct _pin_request);
 
 const led_service_call_ptr_t led_service_call_table[] = {
     led_on,

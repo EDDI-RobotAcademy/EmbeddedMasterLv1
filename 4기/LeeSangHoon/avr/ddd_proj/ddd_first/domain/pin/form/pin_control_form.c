@@ -1,6 +1,7 @@
 #include "pin_control_form.h"
 #include "../service/request/pin_request.h"
 #include "../pin_map.h"
+#include "../global_pin_map.h"
 
 void set_pin_control_form(enum _PIN_MAP pin_number, enum _PIN_OPS_MODE pin_direction)
 {
@@ -10,8 +11,14 @@ void set_pin_control_form(enum _PIN_MAP pin_number, enum _PIN_OPS_MODE pin_direc
 
 struct _pin_request convert_pin_control_data (struct _pin_control_form pin_control_form)
 {
-    pin_request.hw_pin_address = pin_map_vo[pin_control_form.pin_number >> 3];
-    pin_request.shifted_value = 1 << (pin_control_form.pin_number & 8);
+    // 07 - 000111
+    // 15 - 001111
+    // 23 - 010111
+    // -----------
+    //      000111
+    //      011000 -> 24
+    pin_request.hw_pin_address = pin_map_direction_vo[pin_control_form.pin_number >> 3];
+    pin_request.shifted_value = 1 << (pin_control_form.pin_number & ~(24));
 
     return pin_request;
 }

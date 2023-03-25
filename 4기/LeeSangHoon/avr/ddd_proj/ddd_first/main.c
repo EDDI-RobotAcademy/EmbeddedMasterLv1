@@ -7,11 +7,22 @@
 #include <util/delay.h>
 
 #include "domain/led/entity/led.h"
-#include "domain/pin/pin_map.h"
 #include "domain/led/service/led_service_table.h"
+
+#include "domain/led/form/led_control_form.h"
+
+#include "domain/pin/pin_map.h"
 
 #include "domain/pin/form/pin_control_form.h"
 #include "domain/pin/service/pin_service_table.h"
+
+/*
+static unsigned char *pin_map_vo[3] = {
+    (unsigned char *)0x31,
+    (unsigned char *)0x37,
+    (unsigned char *)0x34
+};
+*/
 
 int main(void)
 {
@@ -25,12 +36,21 @@ int main(void)
 
     while(1)
     {
-        set_led_status(LED_STATUS_OFF);
-        led_service_call_table[LED_OFF](led_entity);
+#if 1
+        set_led_control_form(LED_STATUS_OFF);
+        led_service_call_table[LED_OFF](
+            convert_led_control_data(led_control_form));
         _delay_ms(500);
-        set_led_status(LED_STATUS_ON);
-        led_service_call_table[LED_ON](led_entity);
+        set_led_control_form(LED_STATUS_ON);
+        led_service_call_table[LED_ON](
+            convert_led_control_data(led_control_form));
         _delay_ms(500);
+#else
+        PORTB = 0x20;
+        _delay_ms(500);
+        PORTB = 0x00;
+        _delay_ms(500);
+#endif
     }
 
     return 0;

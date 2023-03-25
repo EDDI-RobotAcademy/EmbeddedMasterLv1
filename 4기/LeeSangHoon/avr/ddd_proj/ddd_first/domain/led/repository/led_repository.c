@@ -3,6 +3,7 @@
 
 #include <avr/io.h>
 
+#if 0
 void set_legacy_direction (led led_entity)
 {
     pin_vo pin = led_entity.pin;
@@ -22,7 +23,7 @@ void set_legacy_direction (led led_entity)
     }
 }
 
-void gpio_write (led led_entity)
+void gpio_legacy_write (led led_entity)
 {
     LED_STATUS status = led_entity.status;
     pin_vo pin = led_entity.pin;
@@ -40,5 +41,19 @@ void gpio_write (led led_entity)
     {
         PORTD = status << pin_map;
     }
+}
+#endif
+
+void set_legacy_direction(struct _pin_request pin_request)
+{
+}
+
+void gpio_legacy_write(struct _pin_request pin_request)
+{
+}
+
+void gpio_write (struct _pin_request led_pin_request)
+{
+    (* (volatile unsigned char *)led_pin_request.hw_pin_address) = led_pin_request.shifted_value;
 }
 

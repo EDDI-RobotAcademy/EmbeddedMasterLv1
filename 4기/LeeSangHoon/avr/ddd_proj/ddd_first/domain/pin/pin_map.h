@@ -69,10 +69,4 @@ struct _pin_vo
 //#define PINF (*(volatile unsigned char*) 0x20)
 //#define PING (*(volatile unsigned char*) 0x63)
 
-static unsigned char *pin_map_vo[3] = {
-    (unsigned char *)0x31,
-    (unsigned char *)0x37,
-    (unsigned char *)0x34
-};
-
 #endif
