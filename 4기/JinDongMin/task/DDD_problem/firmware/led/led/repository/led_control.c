@@ -19,10 +19,10 @@ void led_toggle(led_object *led_object_ptr)
     switch (led_object_ptr->status)
     {
         case LED_OFF:
-            turn_on_led(led_object_ptr);
+            led_turn_on(led_object_ptr);
             break;
         case LED_ON:
-            turn_off_led(led_object_ptr);
+            led_turn_off(led_object_ptr);
             break;
     }
 }
