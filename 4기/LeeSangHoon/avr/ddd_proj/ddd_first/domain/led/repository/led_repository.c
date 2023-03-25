@@ -3,7 +3,7 @@
 
 #include <avr/io.h>
 
-void set_direction (led led_entity)
+void set_legacy_direction (led led_entity)
 {
     pin_vo pin = led_entity.pin;
     PIN_MAP pin_map = pin.pin_map;

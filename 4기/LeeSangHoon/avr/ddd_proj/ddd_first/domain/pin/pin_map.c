@@ -1,5 +1,6 @@
 #include "pin_map.h"
 
+/*
 unsigned char *find_pin_io_map(PIN_MAP pin)
 {
     if (pin > 15)
@@ -14,4 +15,7 @@ unsigned char *find_pin_io_map(PIN_MAP pin)
     {
         //PORTD = 1 << pin;
     }
+
+    return NULL;
 }
+*/

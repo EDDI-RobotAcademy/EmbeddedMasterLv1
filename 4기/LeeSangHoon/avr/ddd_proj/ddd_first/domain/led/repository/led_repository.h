@@ -9,7 +9,7 @@ enum led_repository {
     LED_IO_END
 };
 
-void set_direction (led led_entity);
+void set_legacy_direction (led led_entity);
 void gpio_write (led led_entity);
 
 #endif
