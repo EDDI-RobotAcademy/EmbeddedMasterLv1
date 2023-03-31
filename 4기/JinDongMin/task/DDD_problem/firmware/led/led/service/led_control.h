@@ -3,8 +3,18 @@
 
 #include "../entity/led.h"
 
-void turn_on_led(led_object *);
-void turn_off_led(led_object *);
-void toggle_led(led_object *);
+typedef enum _LED_CONTROL LED_CONTROL;
+
+enum _LED_CONTROL
+{
+    LED_TURN_ON,
+    LED_TURN_OFF,
+    LED_TOGGLE,
+    LED_CONTROL_END
+};
+
+void led_turn_on(led_object *);
+void led_turn_off(led_object *);
+void led_toggle(led_object *);
 
 #endif // __LED_CONTROL_H__
