@@ -38,6 +38,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="domain/led/entity/led.h" />
+		<Unit filename="domain/led/form/led_control_form.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="domain/led/form/led_control_form.h" />
 		<Unit filename="domain/led/repository/led_repository.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -52,6 +56,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="domain/pin/form/pin_control_form.h" />
+		<Unit filename="domain/pin/global_pin_map.h" />
 		<Unit filename="domain/pin/pin_map.c">
 			<Option compilerVar="CC" />
 		</Unit>
