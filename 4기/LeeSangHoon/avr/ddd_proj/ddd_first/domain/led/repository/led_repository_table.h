@@ -3,10 +3,10 @@
 
 #include "led_repository.h"
 
-typedef void (* led_repository_call_ptr_t) (led led_entity);
+typedef void (* led_repository_call_ptr_t) (struct _pin_request);
 
 const led_repository_call_ptr_t led_repository_call_table[] = {
-    set_direction,
+    set_legacy_direction,
     gpio_write,
 };
 
