@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MAX			6
+#define MAX			5
 
 unsigned int arr[MAX] = { 1, 2, 3, 4, 5 };
 unsigned int other_arr[MAX];
@@ -29,22 +29,22 @@ void can_I_execute_asm (void)
 	register unsigned int *x8 asm("x8") = 0;
 	x8 = arr;
 
-	asm volatile("mov w1, #0x3");
+	asm volatile("mov w1, #0x3"); //w1 = 3
 
 	//asm volatile ("mov w2, w1, lsl #2");
-	asm volatile("lsl w2, w1, #0x2");
-	asm volatile("mov w4, #0x2");
+	asm volatile("lsl w2, w1, #0x2"); // w2 = w1 * 2^2 = 12
+	asm volatile("mov w4, #0x2"); // w4 = 2
 
 	//asm volatile ("add w3, w1, w2, lsl w4")
-    asm volatile("lsl w3, w2, w4");
-    asm volatile("add w3, w3, w1");
+    asm volatile("lsl w3, w2, w4"); // w3 = w2 * 2^w4 = 12 * 2^2 = 48
+    asm volatile("add w3, w3, w1"); // w3 = w3 + w1 = 48 + 3 = 51
 
 	//asm volatile ("stmia w5, {w1, w2, w3}");
-	asm volatile("str w1, [x8]");
-    asm volatile("str x2, [x8, #0x4]");
-    asm volatile("str w3, [x8, #0x8]");
+	asm volatile("str w1, [x8]"); // memory[x8] = w1 = 3
+    asm volatile("str x2, [x8, #0x4]"); // memory[x8+0x4] = w2 = 12
+    asm volatile("str w3, [x8, #0x8]"); // memory[x8+0x8] = w3 = 51
 
-	print_arr_info(arr);
+	print_arr_info(arr); // arr[0] = 3, arr[1] = 12, arr[2] = 51, arr[3] = 3, arr[4] = 4, arr[5] = 5
 }
 
 void yes_you_can_execute_asm (void)
@@ -54,12 +54,12 @@ void yes_you_can_execute_asm (void)
 
     x8 = arr;
 
-    asm volatile("mov w2, #0x8");
+    asm volatile("mov w2, #0x8"); // w2 = 8
 
     //asm volatile("ldr x0, [x1, x2]");
-    asm volatile("add x4, x8, x2");
-    asm volatile("ldur w0, [x4]");
-    asm volatile("stur w0, [x29, #-0x4]");
+    asm volatile("add x4, x8, x2"); // x4 = x8 + x2
+    asm volatile("ldur w0, [x4]"); // w0 = x4
+    asm volatile("stur w0, [x29, #-0x4]"); // x29-0x4 = w0
 
     printf("w0 = %u\n", w0);
 }
