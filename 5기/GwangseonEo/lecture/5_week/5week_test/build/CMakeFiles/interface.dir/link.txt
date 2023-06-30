@@ -1,0 +1,1 @@
+/usr/bin/gcc -g -rdynamic CMakeFiles/interface.dir/main/main.c.o CMakeFiles/interface.dir/main/add_on_lib.c.o CMakeFiles/interface.dir/protocol/protocol_handler.c.o CMakeFiles/interface.dir/receiver/receiver.c.o CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o -o interface 
