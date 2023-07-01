@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "add_on_lib.h"
+#include "select_function.h"
 #include "../receiver/receiver.h"
 
 // F7: Build
@@ -11,8 +11,8 @@
 
 int main (void)
 {
-    printf("First Test\n");
-    iam_add_on();
+    printf("Turn on the camera\n");
+    select_function();
 
     recv_command_from_outbound();
 
