@@ -1,3 +1,0 @@
-/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build/CMakeFiles/interface.dir
-/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build/CMakeFiles/edit_cache.dir
-/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build/CMakeFiles/rebuild_cache.dir

@@ -6,7 +6,8 @@
 
 #include "../protocol/protocol_handler.h"       // protocol 정보를 관리해야 해서 handler mapping 애야함.
 #include "../protocol/protocol_call_table.h"    // protocol table도 가지고 있어야함.
-#include "../protocol/camera/camera.h"
+#include "../protocol/camera/camera_handler.h"
+#include "../protocol/camera/camera_call_table.h"
 
 void recv_command_from_outbound (void){
     int command, camera_command;

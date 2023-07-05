@@ -3,9 +3,17 @@
 #include <time.h>
 
 #include "protocol_handler.h"
+#include "camera/camera_call_table.h"
+#include "camera/camera_handler.h"
 
 void proc_camera(void *p){
     printf("카메라 프로토콜을 처리합니다!\n");
+    
+    unsigned int *pFunc = p;
+    printf("p = %d\n", *pFunc);
+    
+    camera_call_table[*pFunc](); 
+    
 }
 
 void proc_dc_motor(void *p){
