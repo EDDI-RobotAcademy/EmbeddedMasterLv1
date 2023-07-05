@@ -53,3 +53,6 @@ dkms.conf
 
 # Codeblocks
 *.lss
+
+# cmake build
+build
