@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/build",
+  "command": "/usr/bin/clang   -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/interface.dir/main/main.c.o -c /Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/main/main.c",
+  "file": "/Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/main/main.c",
+  "output": "CMakeFiles/interface.dir/main/main.c.o"
+},
+{
+  "directory": "/Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/build",
+  "command": "/usr/bin/clang   -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/interface.dir/main/add_on_lib.c.o -c /Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/main/add_on_lib.c",
+  "file": "/Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/main/add_on_lib.c",
+  "output": "CMakeFiles/interface.dir/main/add_on_lib.c.o"
+},
+{
+  "directory": "/Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/build",
+  "command": "/usr/bin/clang   -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/interface.dir/protocol/protocol_handler.c.o -c /Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/protocol/protocol_handler.c",
+  "file": "/Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/protocol/protocol_handler.c",
+  "output": "CMakeFiles/interface.dir/protocol/protocol_handler.c.o"
+},
+{
+  "directory": "/Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/build",
+  "command": "/usr/bin/clang   -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/interface.dir/receiver/receiver.c.o -c /Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/receiver/receiver.c",
+  "file": "/Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/receiver/receiver.c",
+  "output": "CMakeFiles/interface.dir/receiver/receiver.c.o"
+}
+]
