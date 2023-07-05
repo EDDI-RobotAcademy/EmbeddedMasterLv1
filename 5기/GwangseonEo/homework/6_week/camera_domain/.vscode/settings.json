@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "protocol_call_table_mapper.h": "c",
+        "camera.h": "c",
+        "camera_handler.h": "c",
+        "camera_call_table.h": "c",
+        "camera_call_table_mapper.h": "c",
+        "protocol_handler.h": "c",
+        "protocol_call_table.h": "c"
+    }
+}

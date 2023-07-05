@@ -39,7 +39,7 @@ void yes_you_can_execute_asm (void)
 
 	r1 = arr;
 	
-	asm volatile("mov r2, #0x4");
+	asm volatile("mov r2, #0x0");
 	asm volatile("ldr r0, [r1, r2]");
 
 	printf("r0 = %u\n", r0);
