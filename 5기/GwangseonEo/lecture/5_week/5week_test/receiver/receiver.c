@@ -17,7 +17,8 @@ void recv_command_from_outbound (void){
     srand(time(NULL));
 
     //command = rand() % PROTOCOL_CALL_BUFFER_COUNT;
-    command = 0;
+    command = CAMERA;
+    
     printf("수신된 명령 : %d\n", command);
 
     protocol_call_table[command]();

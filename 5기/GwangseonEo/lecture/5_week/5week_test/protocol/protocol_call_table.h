@@ -7,7 +7,6 @@
 // void (*)(void) == protocol_call_ptr_t
 // int (*)(int)
 typedef void (* protocol_call_ptr_t) (void);
-typedef unsigned int UINT;
 
 void protocol_not_implemented (void)
 {

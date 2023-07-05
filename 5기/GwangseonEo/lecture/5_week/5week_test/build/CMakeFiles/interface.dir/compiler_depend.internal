@@ -63,7 +63,6 @@ CMakeFiles/interface.dir/main/main.c.o
 CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o
  /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera_handler.c
  /usr/include/stdc-predef.h
- /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera_handler.h
  /usr/include/stdio.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/features.h
@@ -88,11 +87,11 @@ CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
+ /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera_handler.h
 
 CMakeFiles/interface.dir/protocol/protocol_handler.c.o
  /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/protocol_handler.c
  /usr/include/stdc-predef.h
- /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/protocol_handler.h
  /usr/include/stdio.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/features.h
@@ -151,10 +150,12 @@ CMakeFiles/interface.dir/protocol/protocol_handler.c.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
+ /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/protocol_handler.h
+ /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera.h
+ /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera_handler.h
  /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera_call_table.h
  /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera.h
  /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera_call_table_mapper.h
- /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera_handler.h
  /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera_handler.h
 
 CMakeFiles/interface.dir/receiver/receiver.c.o

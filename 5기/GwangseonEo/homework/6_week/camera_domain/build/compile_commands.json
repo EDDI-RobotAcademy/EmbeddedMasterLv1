@@ -1,27 +1,27 @@
 [
 {
-  "directory": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build",
-  "command": "/usr/bin/gcc   -g -std=gnu99 -o CMakeFiles/interface.dir/main/main.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/main/main.c",
-  "file": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/main/main.c"
+  "directory": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build",
+  "command": "/usr/bin/gcc   -g -std=gnu99 -o CMakeFiles/interface.dir/main/main.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/main/main.c",
+  "file": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/main/main.c"
 },
 {
-  "directory": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build",
-  "command": "/usr/bin/gcc   -g -std=gnu99 -o CMakeFiles/interface.dir/main/add_on_lib.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/main/add_on_lib.c",
-  "file": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/main/add_on_lib.c"
+  "directory": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build",
+  "command": "/usr/bin/gcc   -g -std=gnu99 -o CMakeFiles/interface.dir/main/add_on_lib.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/main/add_on_lib.c",
+  "file": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/main/add_on_lib.c"
 },
 {
-  "directory": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build",
-  "command": "/usr/bin/gcc   -g -std=gnu99 -o CMakeFiles/interface.dir/protocol/protocol_handler.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/protocol_handler.c",
-  "file": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/protocol_handler.c"
+  "directory": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build",
+  "command": "/usr/bin/gcc   -g -std=gnu99 -o CMakeFiles/interface.dir/protocol/protocol_handler.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/protocol/protocol_handler.c",
+  "file": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/protocol/protocol_handler.c"
 },
 {
-  "directory": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build",
-  "command": "/usr/bin/gcc   -g -std=gnu99 -o CMakeFiles/interface.dir/receiver/receiver.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/receiver/receiver.c",
-  "file": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/receiver/receiver.c"
+  "directory": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build",
+  "command": "/usr/bin/gcc   -g -std=gnu99 -o CMakeFiles/interface.dir/receiver/receiver.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/receiver/receiver.c",
+  "file": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/receiver/receiver.c"
 },
 {
-  "directory": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build",
-  "command": "/usr/bin/gcc   -g -std=gnu99 -o CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera_handler.c",
-  "file": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera_handler.c"
+  "directory": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build",
+  "command": "/usr/bin/gcc   -g -std=gnu99 -o CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/protocol/camera/camera_handler.c",
+  "file": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/protocol/camera/camera_handler.c"
 }
 ]

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test
+CMAKE_SOURCE_DIR = /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build
+CMAKE_BINARY_DIR = /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/interface.dir/depend.make
@@ -72,72 +72,72 @@ include CMakeFiles/interface.dir/flags.make
 CMakeFiles/interface.dir/main/main.c.o: CMakeFiles/interface.dir/flags.make
 CMakeFiles/interface.dir/main/main.c.o: ../main/main.c
 CMakeFiles/interface.dir/main/main.c.o: CMakeFiles/interface.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/interface.dir/main/main.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/interface.dir/main/main.c.o -MF CMakeFiles/interface.dir/main/main.c.o.d -o CMakeFiles/interface.dir/main/main.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/main/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/interface.dir/main/main.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/interface.dir/main/main.c.o -MF CMakeFiles/interface.dir/main/main.c.o.d -o CMakeFiles/interface.dir/main/main.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/main/main.c
 
 CMakeFiles/interface.dir/main/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/interface.dir/main/main.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/main/main.c > CMakeFiles/interface.dir/main/main.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/main/main.c > CMakeFiles/interface.dir/main/main.c.i
 
 CMakeFiles/interface.dir/main/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/interface.dir/main/main.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/main/main.c -o CMakeFiles/interface.dir/main/main.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/main/main.c -o CMakeFiles/interface.dir/main/main.c.s
 
 CMakeFiles/interface.dir/main/add_on_lib.c.o: CMakeFiles/interface.dir/flags.make
 CMakeFiles/interface.dir/main/add_on_lib.c.o: ../main/add_on_lib.c
 CMakeFiles/interface.dir/main/add_on_lib.c.o: CMakeFiles/interface.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/interface.dir/main/add_on_lib.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/interface.dir/main/add_on_lib.c.o -MF CMakeFiles/interface.dir/main/add_on_lib.c.o.d -o CMakeFiles/interface.dir/main/add_on_lib.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/main/add_on_lib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/interface.dir/main/add_on_lib.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/interface.dir/main/add_on_lib.c.o -MF CMakeFiles/interface.dir/main/add_on_lib.c.o.d -o CMakeFiles/interface.dir/main/add_on_lib.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/main/add_on_lib.c
 
 CMakeFiles/interface.dir/main/add_on_lib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/interface.dir/main/add_on_lib.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/main/add_on_lib.c > CMakeFiles/interface.dir/main/add_on_lib.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/main/add_on_lib.c > CMakeFiles/interface.dir/main/add_on_lib.c.i
 
 CMakeFiles/interface.dir/main/add_on_lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/interface.dir/main/add_on_lib.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/main/add_on_lib.c -o CMakeFiles/interface.dir/main/add_on_lib.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/main/add_on_lib.c -o CMakeFiles/interface.dir/main/add_on_lib.c.s
 
 CMakeFiles/interface.dir/protocol/protocol_handler.c.o: CMakeFiles/interface.dir/flags.make
 CMakeFiles/interface.dir/protocol/protocol_handler.c.o: ../protocol/protocol_handler.c
 CMakeFiles/interface.dir/protocol/protocol_handler.c.o: CMakeFiles/interface.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/interface.dir/protocol/protocol_handler.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/interface.dir/protocol/protocol_handler.c.o -MF CMakeFiles/interface.dir/protocol/protocol_handler.c.o.d -o CMakeFiles/interface.dir/protocol/protocol_handler.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/protocol_handler.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/interface.dir/protocol/protocol_handler.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/interface.dir/protocol/protocol_handler.c.o -MF CMakeFiles/interface.dir/protocol/protocol_handler.c.o.d -o CMakeFiles/interface.dir/protocol/protocol_handler.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/protocol/protocol_handler.c
 
 CMakeFiles/interface.dir/protocol/protocol_handler.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/interface.dir/protocol/protocol_handler.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/protocol_handler.c > CMakeFiles/interface.dir/protocol/protocol_handler.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/protocol/protocol_handler.c > CMakeFiles/interface.dir/protocol/protocol_handler.c.i
 
 CMakeFiles/interface.dir/protocol/protocol_handler.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/interface.dir/protocol/protocol_handler.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/protocol_handler.c -o CMakeFiles/interface.dir/protocol/protocol_handler.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/protocol/protocol_handler.c -o CMakeFiles/interface.dir/protocol/protocol_handler.c.s
 
 CMakeFiles/interface.dir/receiver/receiver.c.o: CMakeFiles/interface.dir/flags.make
 CMakeFiles/interface.dir/receiver/receiver.c.o: ../receiver/receiver.c
 CMakeFiles/interface.dir/receiver/receiver.c.o: CMakeFiles/interface.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/interface.dir/receiver/receiver.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/interface.dir/receiver/receiver.c.o -MF CMakeFiles/interface.dir/receiver/receiver.c.o.d -o CMakeFiles/interface.dir/receiver/receiver.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/receiver/receiver.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/interface.dir/receiver/receiver.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/interface.dir/receiver/receiver.c.o -MF CMakeFiles/interface.dir/receiver/receiver.c.o.d -o CMakeFiles/interface.dir/receiver/receiver.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/receiver/receiver.c
 
 CMakeFiles/interface.dir/receiver/receiver.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/interface.dir/receiver/receiver.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/receiver/receiver.c > CMakeFiles/interface.dir/receiver/receiver.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/receiver/receiver.c > CMakeFiles/interface.dir/receiver/receiver.c.i
 
 CMakeFiles/interface.dir/receiver/receiver.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/interface.dir/receiver/receiver.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/receiver/receiver.c -o CMakeFiles/interface.dir/receiver/receiver.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/receiver/receiver.c -o CMakeFiles/interface.dir/receiver/receiver.c.s
 
 CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o: CMakeFiles/interface.dir/flags.make
 CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o: ../protocol/camera/camera_handler.c
 CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o: CMakeFiles/interface.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o -MF CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o.d -o CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera_handler.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o -MF CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o.d -o CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/protocol/camera/camera_handler.c
 
 CMakeFiles/interface.dir/protocol/camera/camera_handler.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/interface.dir/protocol/camera/camera_handler.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera_handler.c > CMakeFiles/interface.dir/protocol/camera/camera_handler.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/protocol/camera/camera_handler.c > CMakeFiles/interface.dir/protocol/camera/camera_handler.c.i
 
 CMakeFiles/interface.dir/protocol/camera/camera_handler.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/interface.dir/protocol/camera/camera_handler.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/protocol/camera/camera_handler.c -o CMakeFiles/interface.dir/protocol/camera/camera_handler.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/protocol/camera/camera_handler.c -o CMakeFiles/interface.dir/protocol/camera/camera_handler.c.s
 
 # Object files for target interface
 interface_OBJECTS = \
@@ -157,7 +157,7 @@ interface: CMakeFiles/interface.dir/receiver/receiver.c.o
 interface: CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o
 interface: CMakeFiles/interface.dir/build.make
 interface: CMakeFiles/interface.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable interface"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable interface"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/interface.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,6 +169,6 @@ CMakeFiles/interface.dir/clean:
 .PHONY : CMakeFiles/interface.dir/clean
 
 CMakeFiles/interface.dir/depend:
-	cd /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build/CMakeFiles/interface.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build/CMakeFiles/interface.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/interface.dir/depend
 

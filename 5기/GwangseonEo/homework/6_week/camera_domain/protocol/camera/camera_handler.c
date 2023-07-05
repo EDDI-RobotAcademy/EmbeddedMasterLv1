@@ -1,22 +1,28 @@
-#include "camera_handler.h"
 #include <stdio.h>
 
-void proc_active(void){
-    printf("카메라 활성화\n");
+#include "camera_handler.h"
+
+void proc_cam_active(void)
+{
+    printf("카메라를 활성화합니다.\n");
 }
 
-void proc_i2c(void){
-    printf("이미지 센서 i2c 동작 확인\n");
+void proc_cam_zoom(void)
+{
+    printf("줌 조절 기능을 실행합니다.\n");
 }
 
-void proc_read_add(void){
-    printf("이미지 센서 Address 확인\n");
+void proc_cam_focus(void)
+{
+    printf("포커스 조절 기능을 실행합니다.\n");
 }
 
-void proc_mipi(void){
-    printf("이미지 센서 mipi 출력 확인\n");
+void proc_cam_brightness(void)
+{
+    printf("밝기 조절을 실행합니다.\n");
 }
 
-void proc_lvds(void){
-    printf("이미지 센서 lvds 출력 확인\n");
+void proc_cam_motion(void)
+{
+    printf("모션 감지 기능을 실행합니다.");
 }

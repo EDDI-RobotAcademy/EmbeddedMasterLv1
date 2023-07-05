@@ -1,10 +1,10 @@
-#ifndef __CAMERA_HANDLER_H__
-#define __CAMERA_HANDLER_H__
+#ifndef __CAMERA_FUNC_H__
+#define __CAMERA_FUNC_H__
 
-void proc_active(void);
-void proc_i2c(void);
-void proc_read_add(void);
-void proc_mipi(void);
-void proc_lvds(void);
+void proc_cam_active(void);
+void proc_cam_zoom(void);
+void proc_cam_focus(void);
+void proc_cam_brightness(void);
+void proc_cam_motion(void);
 
 #endif

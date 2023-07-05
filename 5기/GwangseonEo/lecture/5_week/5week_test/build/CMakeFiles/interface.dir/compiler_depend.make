@@ -60,7 +60,6 @@ CMakeFiles/interface.dir/main/main.c.o: ../main/main.c \
 
 CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o: ../protocol/camera/camera_handler.c \
   /usr/include/stdc-predef.h \
-  ../protocol/camera/camera_handler.h \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h \
@@ -84,11 +83,11 @@ CMakeFiles/interface.dir/protocol/camera/camera_handler.c.o: ../protocol/camera/
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  ../protocol/camera/camera_handler.h
 
 CMakeFiles/interface.dir/protocol/protocol_handler.c.o: ../protocol/protocol_handler.c \
   /usr/include/stdc-predef.h \
-  ../protocol/protocol_handler.h \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h \
@@ -147,10 +146,12 @@ CMakeFiles/interface.dir/protocol/protocol_handler.c.o: ../protocol/protocol_han
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  ../protocol/protocol_handler.h \
+  ../protocol/camera/camera.h \
+  ../protocol/camera/camera_handler.h \
   ../protocol/camera/camera_call_table.h \
   ../protocol/camera/camera.h \
   ../protocol/camera/camera_call_table_mapper.h \
-  ../protocol/camera/camera_handler.h \
   ../protocol/camera/camera_handler.h
 
 CMakeFiles/interface.dir/receiver/receiver.c.o: ../receiver/receiver.c \
@@ -235,8 +236,6 @@ CMakeFiles/interface.dir/receiver/receiver.c.o: ../receiver/receiver.c \
 
 /usr/include/time.h:
 
-/usr/include/alloca.h:
-
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
@@ -266,6 +265,8 @@ CMakeFiles/interface.dir/receiver/receiver.c.o: ../receiver/receiver.c \
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/alloca.h:
 
 /usr/include/features-time64.h:
 
@@ -317,11 +318,11 @@ CMakeFiles/interface.dir/receiver/receiver.c.o: ../receiver/receiver.c \
 
 ../protocol/camera/camera_handler.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+../protocol/protocol_handler.h:
 
 ../protocol/protocol_handler.c:
 
-../protocol/protocol_handler.h:
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 

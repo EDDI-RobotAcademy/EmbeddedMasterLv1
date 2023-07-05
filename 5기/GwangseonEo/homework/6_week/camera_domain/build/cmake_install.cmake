@@ -1,4 +1,4 @@
-# Install script for directory: /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test
+# Install script for directory: /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/5_week/5week_test/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/homework/6_week/camera_domain/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
