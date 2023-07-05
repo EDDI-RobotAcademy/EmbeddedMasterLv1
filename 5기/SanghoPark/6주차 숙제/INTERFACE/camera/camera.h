@@ -1,0 +1,16 @@
+#ifndef __CAMERA_H__
+#define __CAMERA_H__
+
+enum camera_interface
+{
+	CAM_INITIAL,
+	CAM_OPMODE,
+	CAM_SETTINGS,
+	CAM_CAPTURE,
+	CAM_END
+};
+
+#define CAMERA_INTERFACE_BUFFER_COUNT	(CAM_END)
+#define CAMERA_INTERFACE_INTERFACE_BUFFER	((CAM_END) - 1)
+
+#endif
