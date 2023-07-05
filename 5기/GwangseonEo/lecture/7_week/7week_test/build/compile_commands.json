@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/7_week/5week_test/build",
+  "command": "/usr/bin/gcc   -g -std=gnu99 -o CMakeFiles/ddd.dir/main/main.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/7_week/5week_test/main/main.c",
+  "file": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/7_week/5week_test/main/main.c"
+},
+{
+  "directory": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/7_week/5week_test/build",
+  "command": "/usr/bin/gcc   -g -std=gnu99 -o CMakeFiles/ddd.dir/main/how_to_malloc.c.o -c /home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/7_week/5week_test/main/how_to_malloc.c",
+  "file": "/home/eddi/EmbeddedMasterLv1/5기/GwangseonEo/lecture/7_week/5week_test/main/how_to_malloc.c"
+}
+]

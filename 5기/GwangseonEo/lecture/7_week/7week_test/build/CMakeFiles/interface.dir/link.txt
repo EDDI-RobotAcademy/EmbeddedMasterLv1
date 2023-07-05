@@ -1,0 +1,1 @@
+/usr/bin/gcc -g -rdynamic CMakeFiles/interface.dir/main/main.c.o CMakeFiles/interface.dir/main/how_to_malloc.c.o -o interface 
