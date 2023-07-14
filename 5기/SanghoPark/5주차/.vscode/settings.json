@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "protocol_call_table.h": "c",
-        "protocol_call_table_mapper.h": "c"
-    }
-}
