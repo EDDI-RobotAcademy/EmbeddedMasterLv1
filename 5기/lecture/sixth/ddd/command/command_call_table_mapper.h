@@ -5,7 +5,7 @@
 #include "command_handler.h"
 #include "command.h"
 
-#define __COMMAND_CALL_TABLE(nr, sym) [nr] = sym,
+#define __COMMAND_CALL_TABLE(number, function_prototype) [number] = function_prototype,
 
 __COMMAND_CALL_TABLE(EXIT, program_exit)
 __COMMAND_CALL_TABLE(MEMBER_REGISTER, member_register)

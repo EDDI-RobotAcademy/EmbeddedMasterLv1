@@ -7,8 +7,10 @@
 
 #include "how_to_malloc.h"
 
-#include "../command/command_handler.h"
+#include "../member/member.h"
 #include "../member/member_handler.h"
+
+#include "../command/command_handler.h"
 #include "../command/command_call_table.h"
 
 #define ASCII_BIAS          (0x30)
@@ -59,6 +61,7 @@ int main (void)
 
     printf("malloc() 동적 할당 테스트\n");
     how_to_malloc_data();
+    init_member_info_table();
 
     for (; !is_finished;)
     {
