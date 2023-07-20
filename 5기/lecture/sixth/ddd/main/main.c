@@ -20,7 +20,7 @@
 
 // Ctrl + N: New file
 const char welcome_message[] = "저희 시스템을 찾아주셔서 감사합니다!\n";
-const char not_loggedin_option_message[] = "0번(종료), 1번(회원가입), 2번(로그인) 중 원하는 작업을 선택해주세요!\n";
+const char not_loggedin_option_message[] = "0번(종료), 1번(회원가입), 2번(로그인), 3번(회원정보) 중 원하는 작업을 선택해주세요!\n";
 
 void print_welcome_message (void)
 {
@@ -86,7 +86,7 @@ int main (void)
             is_finished = true;
         }
 
-        if (command_idx < 3) {
+        if (command_idx < 4) {
             command_call_table[command_idx]();
         }
     }

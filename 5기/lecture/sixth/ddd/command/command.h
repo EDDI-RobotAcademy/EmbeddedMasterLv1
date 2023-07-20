@@ -6,6 +6,7 @@ enum command
     EXIT,
     MEMBER_REGISTER,
     MEMBER_LOGIN,
+    MEMBER_LIST,
     END
 };
 

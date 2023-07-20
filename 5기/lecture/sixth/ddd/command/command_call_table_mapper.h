@@ -10,5 +10,6 @@
 __COMMAND_CALL_TABLE(EXIT, program_exit)
 __COMMAND_CALL_TABLE(MEMBER_REGISTER, member_register)
 __COMMAND_CALL_TABLE(MEMBER_LOGIN, member_login)
+__COMMAND_CALL_TABLE(MEMBER_LIST, member_list)
 
 #endif

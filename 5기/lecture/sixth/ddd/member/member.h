@@ -6,11 +6,13 @@
 typedef struct _member member;
 struct _member 
 {
+    int unique_value;
     char *id;
     char password[MAX_USER_INPUT];
 };
 
-member *member_info_table;
+extern int unique_member_value_count;
+extern member *member_info_table;
 
 void init_member_info_table (void);
 
