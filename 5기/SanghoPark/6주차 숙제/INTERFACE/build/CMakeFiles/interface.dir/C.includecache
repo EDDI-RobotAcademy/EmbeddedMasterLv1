@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/psh/repo/academy/EmbeddedMasterLv1/5기/SanghoPark/6주차 숙제/INTERFACE/protocol/protocol.h
+
+/home/psh/repo/academy/EmbeddedMasterLv1/5기/SanghoPark/6주차 숙제/INTERFACE/protocol/protocol_call_table.h
+stdio.h
+-
+protocol.h
+/home/psh/repo/academy/EmbeddedMasterLv1/5기/SanghoPark/6주차 숙제/INTERFACE/protocol/protocol.h
+protocol_call_table_mapper.h
+/home/psh/repo/academy/EmbeddedMasterLv1/5기/SanghoPark/6주차 숙제/INTERFACE/protocol/protocol_call_table_mapper.h
+
+/home/psh/repo/academy/EmbeddedMasterLv1/5기/SanghoPark/6주차 숙제/INTERFACE/protocol/protocol_call_table_mapper.h
+protocol_handler.h
+/home/psh/repo/academy/EmbeddedMasterLv1/5기/SanghoPark/6주차 숙제/INTERFACE/protocol/protocol_handler.h
+
+/home/psh/repo/academy/EmbeddedMasterLv1/5기/SanghoPark/6주차 숙제/INTERFACE/protocol/protocol_handler.h
+
+/home/psh/repo/academy/EmbeddedMasterLv1/5기/SanghoPark/6주차 숙제/INTERFACE/receiver/receiver.c
+time.h
+-
+stdio.h
+-
+stdlib.h
+-
+receiver.h
+/home/psh/repo/academy/EmbeddedMasterLv1/5기/SanghoPark/6주차 숙제/INTERFACE/receiver/receiver.h
+../protocol/protocol_handler.h
+/home/psh/repo/academy/EmbeddedMasterLv1/5기/SanghoPark/6주차 숙제/INTERFACE/protocol/protocol_handler.h
+../protocol/protocol_call_table.h
+/home/psh/repo/academy/EmbeddedMasterLv1/5기/SanghoPark/6주차 숙제/INTERFACE/protocol/protocol_call_table.h
+
+/home/psh/repo/academy/EmbeddedMasterLv1/5기/SanghoPark/6주차 숙제/INTERFACE/receiver/receiver.h
+

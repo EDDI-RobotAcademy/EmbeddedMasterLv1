@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "command_call_table.h": "c",
+        "stdio.h": "c"
+    }
+}

@@ -1,0 +1,3 @@
+/Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/build/CMakeFiles/interface.dir
+/Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/build/CMakeFiles/edit_cache.dir
+/Users/sungkillee/EmbeddedMasterLv1/5기/SungkilLee/5weeks/interface/build/CMakeFiles/rebuild_cache.dir
