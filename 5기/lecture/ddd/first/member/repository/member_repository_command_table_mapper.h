@@ -1,0 +1,13 @@
+#ifndef __MEMBER_REPOSITORY_COMMAND_TABLE_MAPPER_H__
+#define __MEMBER_REPOSITORY_COMMAND_TABLE_MAPPER_H__
+
+#include "member_repository_command.h"
+#include "member_repository_handler.h"
+
+#define __MEMBER_REPOSITORY_CALL_TABLE(number, function_prototype) [number] = function_prototype,
+
+__MEMBER_REPOSITORY_CALL_TABLE(MEMBER_SAVE_REPOSITORY, member_save_repository)
+__MEMBER_REPOSITORY_CALL_TABLE(MEMBER_FIND_BY_ID_REPOSITORY, member_find_by_id_repository)
+__MEMBER_REPOSITORY_CALL_TABLE(MEMBER_FIND_ALL_REPOSITORY, member_find_all_repository)
+
+#endif

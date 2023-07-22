@@ -1,0 +1,15 @@
+#ifndef __MEMBER_REPOSITORY_COMMAND_H__
+#define __MEMBER_REPOSITORY_COMMAND_H__
+
+enum member_repository_command
+{
+    MEMBER_SAVE_REPOSITORY,
+    MEMBER_FIND_BY_ID_REPOSITORY,
+    MEMBER_FIND_ALL_REPOSITORY,
+    END
+};
+
+#define MEMBER_REPOSITORY_CALL_BUFFER_COUNT          (END)
+#define MEMBER_REPOSITORY_CALL_BUFFER                ((END) - 1)
+
+#endif
