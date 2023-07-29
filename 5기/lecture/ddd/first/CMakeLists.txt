@@ -17,4 +17,7 @@ add_executable(
         member/service/request/member_request.h member/service/request/member_request.c
         member/service/member_service_command.h member/service/member_service_command_table.h
         member/service/member_service_command_table_mapper.h member/service/member_service_handler.h
-        member/service/member_service_handler.c member/repository/member_repository_command.h member/repository/member_repository_command_table.h member/repository/member_repository_command_table_mapper.h member/repository/member_repository_handler.h member/repository/member_repository_handler.c)
+        member/service/member_service_handler.c member/repository/member_repository_command.h 
+        member/repository/member_repository_command_table.h member/repository/member_repository_command_table_mapper.h 
+        member/repository/member_repository_handler.h member/repository/member_repository_handler.c
+        utility/ui/console/input_process.h utility/ui/console/input_process.c)

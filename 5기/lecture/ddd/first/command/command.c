@@ -1,6 +1,8 @@
 #include "command.h"
+#include "../utility/ui/console/input_process.h"
 
 #include <stdio.h>
+#include <stdlib.h>
 
 char basic_msg[] = "다음 명령들 중 하나를 입력해주세요!\n"
                    "0 (program exit)\n"
@@ -20,5 +22,7 @@ void print_basic_command (void)
 
 int input_user_command (void)
 {
-    return 1;
+    char real_user_input[USER_COMMAND_INPUT_MAX] = { 0 };
+    custom_user_input(real_user_input);
+    return atoi(real_user_input);
 }
