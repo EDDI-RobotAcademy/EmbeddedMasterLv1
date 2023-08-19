@@ -7,6 +7,7 @@ enum command
 {
     EXIT,
     MEMBER,
+    PRODUCT,
     END
 };
 

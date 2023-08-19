@@ -1,0 +1,13 @@
+#ifndef __PRODUCT_REPOSITORY_COMMAND_TABLE_MAPPER_H__
+#define __PRODUCT_REPOSITORY_COMMAND_TABLE_MAPPER_H__
+
+#include "product_repository_command.h"
+#include "product_repository_handler.h"
+
+#define __PRODUCT_REPOSITORY_CALL_TABLE(number, function_prototype) [number] = function_prototype,
+
+__PRODUCT_REPOSITORY_CALL_TABLE(PRODUCT_SAVE_REPOSITORY, product_save_repository)
+__PRODUCT_REPOSITORY_CALL_TABLE(PRODUCT_FIND_BY_ID_REPOSITORY, product_find_by_id_repository)
+__PRODUCT_REPOSITORY_CALL_TABLE(PRODUCT_FIND_ALL_REPOSITORY, product_find_all_repository)
+
+#endif

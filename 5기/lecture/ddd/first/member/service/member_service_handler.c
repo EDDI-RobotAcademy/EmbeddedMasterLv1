@@ -25,6 +25,10 @@ void member_register_service (member_request *member_request_object)
 void member_login_service (member_request *member_request_object)
 {
     printf("member service: login()\n");
+
+    member *member_object = to_member(member_request_object);
+    member_repository_table[MEMBER_FIND_BY_ID_REPOSITORY](member_object);
+    free_member(member_object);
 }
 
 void member_list_service (member_request *member_request_object)

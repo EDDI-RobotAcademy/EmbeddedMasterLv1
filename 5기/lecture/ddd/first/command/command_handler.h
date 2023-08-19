@@ -3,5 +3,6 @@
 
 void program_exit (void);
 void invoke_member_call_table (void);
+void invoke_product_call_table (void);
 
 #endif

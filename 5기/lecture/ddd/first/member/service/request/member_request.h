@@ -1,5 +1,5 @@
-#ifndef __MEMBER_REQUEST_FORM_H__
-#define __MEMBER_REQUEST_FORM_H__
+#ifndef __MEMBER_REQUEST_H__
+#define __MEMBER_REQUEST_H__
 
 #include "../../entity/member.h"
 

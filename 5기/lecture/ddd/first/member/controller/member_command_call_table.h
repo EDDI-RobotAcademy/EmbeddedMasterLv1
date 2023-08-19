@@ -1,5 +1,5 @@
-#ifndef __MEMBER_CALL_TABLE_H__
-#define __MEMBER_CALL_TABLE_H__
+#ifndef __MEMBER_COMMAND_CALL_TABLE_H__
+#define __MEMBER_COMMAND_CALL_TABLE_H__
 
 #include <stdio.h>
 #include "member_command.h"
