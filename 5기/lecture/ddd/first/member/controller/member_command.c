@@ -1,8 +1,10 @@
 #include "member_command.h"
 
-#include "../../utility/ui/console/input_process.h"
+//#include "../../utility/ui/console/input_process.h"
+#include "../../ui/console/user_input.h"
 
 #include <stdio.h>
+#include <stdlib.h>
 
 char member_command_msg[] = "다음 명령들 중 하나를 입력해주세요!\n"
                             "0 (member register)\n"
@@ -16,7 +18,8 @@ void print_member_command (void)
 
 int input_user_member_command (void)
 {
-    char real_user_input[USER_COMMAND_INPUT_MAX] = { 0 };
-    custom_user_input(real_user_input);
+    //char real_user_input[USER_COMMAND_INPUT_MAX] = { 0 };
+    char real_user_input[MAX_USER_INPUT] = { 0 };
+    get_user_input(real_user_input);
     return atoi(real_user_input);
 }

@@ -1,12 +1,14 @@
 #include "command.h"
-#include "../utility/ui/console/input_process.h"
+//#include "../utility/ui/console/input_process.h"
+#include "../ui/console/user_input.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 
 char basic_msg[] = "다음 명령들 중 하나를 입력해주세요!\n"
                    "0 (program exit)\n"
-                   "1 (member)\n";
+                   "1 (member)\n"
+                   "2 (product)\n";
 
 int user_input_command = 1;
 
@@ -22,7 +24,8 @@ void print_basic_command (void)
 
 int input_user_command (void)
 {
-    char real_user_input[USER_COMMAND_INPUT_MAX] = { 0 };
-    custom_user_input(real_user_input);
+    //char real_user_input[USER_COMMAND_INPUT_MAX] = { 0 };
+    char real_user_input[MAX_USER_INPUT] = { 0 };
+    get_user_input(real_user_input);
     return atoi(real_user_input);
 }

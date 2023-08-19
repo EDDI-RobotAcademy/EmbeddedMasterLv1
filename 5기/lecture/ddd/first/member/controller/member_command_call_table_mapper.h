@@ -1,5 +1,5 @@
-#ifndef __MEMBER_CALL_TABLE_MAPPER_H__
-#define __MEMBER_CALL_TABLE_MAPPER_H__
+#ifndef __MEMBER_COMMAND_CALL_TABLE_MAPPER_H__
+#define __MEMBER_COMMAND_CALL_TABLE_MAPPER_H__
 
 #include "member_command.h"
 #include "member_command_handler.h"
