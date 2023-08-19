@@ -59,13 +59,14 @@ custom_queue *enqueue_data (custom_queue *head, void *data, enum queue_request r
 member *find_queue_data (custom_queue *head, void *finding_data, enum queue_request request)
 {
     custom_queue *tmp = head;
+    member *finding_member;
 
     if (!head) { return NULL; }
 
     switch (request)
     {
         case MEMBER_REQUEST:
-            member *finding_member = (member *)finding_data;
+            finding_member = (member *)finding_data;
             int finding_member_id_length = strlen(finding_member->id);
             int finding_member_password_length = strlen(finding_member->password);
 
@@ -91,7 +92,7 @@ member *find_queue_data (custom_queue *head, void *finding_data, enum queue_requ
             break;
 
         case PRODUCT_FINDING_REQUEST:
-            int finding_product_idx = *((int *) finding_data);
+            //int finding_product_idx = *((int *) finding_data);
             break;
         
         default:
