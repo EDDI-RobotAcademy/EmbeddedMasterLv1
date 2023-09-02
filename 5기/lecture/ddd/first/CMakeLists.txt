@@ -43,6 +43,12 @@ file(GLOB SOURCE_FILES
         "product/service/request/*.c"
         "product/service/response/*.c"
         "product/repository/*.c"
+        "order/controller/*.c"
+        "order/entity/*.c"
+        "order/service/*.c"
+        "order/service/request/*.c"
+        "order/service/response/*.c"
+        "order/repository/*.c"
 )
 
 add_executable(

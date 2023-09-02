@@ -9,5 +9,6 @@
 __COMMAND_CALL_TABLE(EXIT, program_exit)
 __COMMAND_CALL_TABLE(MEMBER, invoke_member_call_table)
 __COMMAND_CALL_TABLE(PRODUCT, invoke_product_call_table)
+__COMMAND_CALL_TABLE(ORDER, invoke_order_call_table)
 
 #endif

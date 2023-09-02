@@ -14,5 +14,6 @@ struct _product_response
 };
 
 product_response *init_product_response (int unique_value, char *name, int price, char *details);
+void print_product_response (product_response *product_response_object);
 
 #endif

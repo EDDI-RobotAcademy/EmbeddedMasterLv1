@@ -8,6 +8,7 @@ enum command
     EXIT,
     MEMBER,
     PRODUCT,
+    ORDER,
     END
 };
 

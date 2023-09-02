@@ -1,0 +1,13 @@
+#ifndef __ORDER_REPOSITORY_COMMAND_TABLE_MAPPER_H__
+#define __ORDER_REPOSITORY_COMMAND_TABLE_MAPPER_H__
+
+#include "order_repository_command.h"
+#include "order_repository_handler.h"
+
+#define __ORDER_REPOSITORY_CALL_TABLE(number, function_prototype) [number] = function_prototype,
+
+__ORDER_REPOSITORY_CALL_TABLE(ORDER_SAVE_REPOSITORY, order_save_repository)
+__ORDER_REPOSITORY_CALL_TABLE(ORDER_FIND_BY_ID_REPOSITORY, order_find_by_id_repository)
+__ORDER_REPOSITORY_CALL_TABLE(ORDER_FIND_ALL_REPOSITORY, order_find_all_repository)
+
+#endif

@@ -8,7 +8,8 @@
 char basic_msg[] = "다음 명령들 중 하나를 입력해주세요!\n"
                    "0 (program exit)\n"
                    "1 (member)\n"
-                   "2 (product)\n";
+                   "2 (product)\n"
+                   "3 (order)\n";
 
 int user_input_command = 1;
 

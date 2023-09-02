@@ -1,0 +1,14 @@
+#ifndef __ORDER_SERVICE_COMMAND_H__
+#define __ORDER_SERVICE_COMMAND_H__
+
+enum order_service_command
+{
+    ORDER_REGISTER_SERVICE,
+    ORDER_LIST_SERVICE,
+    ORDER_SERVICE_END
+};
+
+#define ORDER_SERVICE_CALL_BUFFER_COUNT          (ORDER_SERVICE_END)
+#define ORDER_SERVICE_CALL_BUFFER                ((ORDER_SERVICE_END) - 1)
+
+#endif
