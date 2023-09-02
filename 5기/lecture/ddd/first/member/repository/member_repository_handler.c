@@ -14,6 +14,7 @@ void member_save_repository (member *member_object)
     member_queue = enqueue_data(member_queue, member_object, MEMBER_REQUEST);
 }
 
+// TODO: 리팩토링이 필요한 영역
 void member_find_by_id_repository (member *member_object)
 {
     printf("member repository: find_by_id()\n");

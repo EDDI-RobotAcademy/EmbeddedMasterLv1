@@ -11,5 +11,7 @@ struct _session
 extern struct _session session_object;
 
 session *init_session (char *id);
+// TODO: 야매라 없애야함 (급조)
+int find_unique_id_from_session (void);
 
 #endif

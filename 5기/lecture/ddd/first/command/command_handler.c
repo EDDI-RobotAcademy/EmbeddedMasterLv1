@@ -6,6 +6,10 @@
 #include "../product/controller/product_command_handler.h"
 #include "../product/controller/product_command_call_table.h"
 
+#include "../order/controller/order_command.h"
+#include "../order/controller/order_command_handler.h"
+#include "../order/controller/order_command_call_table.h"
+
 #include "command_handler.h"
 
 #include <stdio.h>
@@ -34,4 +38,13 @@ void invoke_product_call_table (void)
     print_product_command();
     product_command = input_user_product_command();
     product_call_table[product_command]();
+}
+
+void invoke_order_call_table (void)
+{
+    int order_command;
+
+    print_order_command();
+    order_command = input_user_order_command();
+    order_call_table[order_command]();
 }

@@ -56,10 +56,14 @@ custom_queue *enqueue_data (custom_queue *head, void *data, enum queue_request r
     return head;
 }
 
-member *find_queue_data (custom_queue *head, void *finding_data, enum queue_request request)
+//member *find_queue_data (custom_queue *head, void *finding_data, enum queue_request request)
+void *find_queue_data (custom_queue *head, void *finding_data, enum queue_request request)
 {
     custom_queue *tmp = head;
     member *finding_member;
+    char *finding_member_id;
+    int finding_product_unique_id;
+    int finding_member_id_length;
 
     if (!head) { return NULL; }
 
@@ -67,7 +71,7 @@ member *find_queue_data (custom_queue *head, void *finding_data, enum queue_requ
     {
         case MEMBER_REQUEST:
             finding_member = (member *)finding_data;
-            int finding_member_id_length = strlen(finding_member->id);
+            finding_member_id_length = strlen(finding_member->id);
             int finding_member_password_length = strlen(finding_member->password);
 
             while (tmp)
@@ -88,8 +92,42 @@ member *find_queue_data (custom_queue *head, void *finding_data, enum queue_requ
             printf("일치하는 회원이 존재하지 않습니다\n");
             return NULL;
 
+        case MEMBER_FIND_BY_ID:
+            finding_member_id = (char *)finding_data;
+            finding_member_id_length = strlen(finding_member_id);
+
+            while (tmp)
+            {
+                member *current_node_member = (member *)tmp->data;
+
+                if (!strncmp(finding_member_id, current_node_member->id, finding_member_id_length))
+                {
+                    return current_node_member;
+                }
+
+                tmp = tmp->link;
+            }
+
+            printf("일치하는 회원이 존재하지 않습니다\n");
+            return NULL;
+
         case PRODUCT_REQUEST:
-            break;
+            finding_product_unique_id = *((int *)finding_data);
+
+            while (tmp)
+            {
+                product *current_node_product = (product *)tmp->data;
+
+                if (finding_product_unique_id == current_node_product->unique_value)
+                {
+                    return current_node_product;
+                }
+
+                tmp = tmp->link;
+            }
+
+            printf("일치하는 상품이 존재하지 않습니다\n");
+            return NULL;
 
         case PRODUCT_FINDING_REQUEST:
             //int finding_product_idx = *((int *) finding_data);

@@ -15,7 +15,8 @@ extern struct _custom_queue *member_queue;
 extern struct _custom_queue *product_queue;
 
 custom_queue *enqueue_data (custom_queue *head, void *data, enum queue_request request);
-member *find_queue_data (custom_queue *head, void *finding_data, enum queue_request request);
+//member *find_queue_data (custom_queue *head, void *finding_data, enum queue_request request);
+void *find_queue_data (custom_queue *head, void *finding_data, enum queue_request request);
 void print_queue_data(custom_queue *head, enum queue_request request);
 
 #endif
