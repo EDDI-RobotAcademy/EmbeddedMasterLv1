@@ -1,6 +1,7 @@
 #include "queue.h"
 #include "../../member/entity/member.h"
 #include "../../product/entity/product.h"
+#include "../../order/entity/order.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -29,6 +30,11 @@ void alloc_request_type_data (custom_queue *head, void *data, enum queue_request
         case PRODUCT_REQUEST:
             head->data = (product *) malloc (sizeof(product));
             memmove(head->data, data, sizeof(product));
+            break;
+
+        case ORDER_SAVE_REQUEST:
+            head->data = (order *) malloc (sizeof(order));
+            memmove(head->data, data, sizeof(order));
             break;
         
         default:
@@ -157,5 +163,32 @@ void print_queue_data(custom_queue *head, enum queue_request request)
         }
 
         tmp = tmp->link;
+    }
+}
+
+void print_queue_conditional_data(custom_queue *head, void *condition_data, enum queue_request request)
+{
+    custom_queue *tmp = head;
+    order *finding_order;
+    int unique_member_id;
+
+    switch (request) {
+        case ORDER_FIND_ALL_REQUEST:
+            while (tmp) {
+                unique_member_id = *((int *) condition_data);
+
+                finding_order = (order *) tmp->data;
+
+                if (finding_order->member_unique_id == unique_member_id)
+                {
+                    print_order(finding_order);
+                }
+
+                tmp = tmp->link;
+            }
+            break;
+
+        default:
+            break;
     }
 }

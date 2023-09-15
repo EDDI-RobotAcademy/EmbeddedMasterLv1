@@ -20,8 +20,8 @@ order *init_order (int member_unique_id, int product_unique_id)
 void print_order (order *order_object)
 {
     printf("order unique value: %d\n", order_object->unique_value);
-    printf("order name: %d\n", order_object->member_unique_id);
-    printf("order price: %d\n", order_object->product_unique_id);
+    printf("order member unique id: %d\n", order_object->member_unique_id);
+    printf("order product unique id: %d\n", order_object->product_unique_id);
 }
 
 void free_order (order *order_object)

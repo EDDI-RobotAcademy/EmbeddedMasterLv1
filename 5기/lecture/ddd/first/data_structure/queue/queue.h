@@ -18,5 +18,6 @@ custom_queue *enqueue_data (custom_queue *head, void *data, enum queue_request r
 //member *find_queue_data (custom_queue *head, void *finding_data, enum queue_request request);
 void *find_queue_data (custom_queue *head, void *finding_data, enum queue_request request);
 void print_queue_data(custom_queue *head, enum queue_request request);
+void print_queue_conditional_data(custom_queue *head, void *condition_data, enum queue_request request);
 
 #endif

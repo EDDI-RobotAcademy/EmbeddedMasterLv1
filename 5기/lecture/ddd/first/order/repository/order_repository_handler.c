@@ -11,7 +11,7 @@ order_response *order_save_repository (void *order_object)
 {
     printf("order repository: save()\n");
 
-    order_queue = enqueue_data(order_queue, order_object, ORDER_REQUEST);
+    order_queue = enqueue_data(order_queue, order_object, ORDER_SAVE_REQUEST);
     return NULL;
 }
 
@@ -28,9 +28,9 @@ order_response *order_find_by_id_repository (void *finding_order_idx)
     return order_response_object;
 }
 
-order_response *order_find_all_repository (void *order_object)
+order_response *order_find_all_repository (void *finding_member_id)
 {
     printf("order repository: find_all()\n");
-    print_queue_data(order_queue, ORDER_REQUEST);
+    print_queue_conditional_data(order_queue, finding_member_id, ORDER_FIND_ALL_REQUEST);
     return NULL;
 }
