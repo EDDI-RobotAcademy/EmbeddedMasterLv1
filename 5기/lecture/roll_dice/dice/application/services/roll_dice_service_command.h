@@ -1,0 +1,13 @@
+#ifndef __ROLL_DICE_SERVICE_COMMAND_H__
+#define __ROLL_DICE_SERVICE_COMMAND_H__
+
+enum roll_dice_service_command
+{
+    ROLL_DICE_SERVICE_EXECUTE,
+    ROLL_DICE_SERVICE_END
+};
+
+#define ROLL_DICE_SERVICE_EXECUTE_BUFFER_COUNT          (ROLL_DICE_SERVICE_END)
+#define ROLL_DICE_SERVICE_EXECUTE_BUFFER                ((ROLL_DICE_SERVICE_END) - 1)
+
+#endif
