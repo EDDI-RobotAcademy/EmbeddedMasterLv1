@@ -1,0 +1,6 @@
+#ifndef __DICE_IN_MEMORY_ADAPTER_COMMAND_HANDLER_H__
+#define __DICE_IN_MEMORY_ADAPTER_COMMAND_HANDLER_H__
+
+void store_dice_number(void);
+
+#endif

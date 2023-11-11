@@ -1,0 +1,6 @@
+#ifndef __ROLL_DICE_SERVICE_COMMAND_HANDLER_H__
+#define __ROLL_DICE_SERVICE_COMMAND_HANDLER_H__
+
+void roll_dice_service_execute(void);
+
+#endif
